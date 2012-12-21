@@ -1,0 +1,322 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D6C5B3AB1684E7270071CFD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AA1684E7270071CFD3 /* UIKit.framework */; };
+		D6C5B3AD1684E7270071CFD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AC1684E7270071CFD3 /* Foundation.framework */; };
+		D6C5B3AF1684E7270071CFD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AE1684E7270071CFD3 /* CoreGraphics.framework */; };
+		D6C5B3B51684E7270071CFD3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3B31684E7270071CFD3 /* InfoPlist.strings */; };
+		D6C5B3B71684E7270071CFD3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3B61684E7270071CFD3 /* main.m */; };
+		D6C5B3BB1684E7270071CFD3 /* AGLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3BA1684E7270071CFD3 /* AGLAppDelegate.m */; };
+		D6C5B3BD1684E7270071CFD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3BC1684E7270071CFD3 /* Default.png */; };
+		D6C5B3BF1684E7270071CFD3 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3BE1684E7270071CFD3 /* Default@2x.png */; };
+		D6C5B3C11684E7270071CFD3 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3C01684E7270071CFD3 /* Default-568h@2x.png */; };
+		D6C5B3C41684E7270071CFD3 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3C21684E7270071CFD3 /* MainStoryboard.storyboard */; };
+		D6C5B3C71684E7270071CFD3 /* AGLFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3C61684E7270071CFD3 /* AGLFirstViewController.m */; };
+		D6C5B3C91684E7270071CFD3 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3C81684E7270071CFD3 /* first.png */; };
+		D6C5B3CB1684E7270071CFD3 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3CA1684E7270071CFD3 /* first@2x.png */; };
+		D6C5B3CE1684E7270071CFD3 /* AGLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3CD1684E7270071CFD3 /* AGLSecondViewController.m */; };
+		D6C5B3D01684E7270071CFD3 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3CF1684E7270071CFD3 /* second.png */; };
+		D6C5B3D21684E7270071CFD3 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3D11684E7270071CFD3 /* second@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D6C5B3A61684E7270071CFD3 /* Agecel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agecel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6C5B3AA1684E7270071CFD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D6C5B3AC1684E7270071CFD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D6C5B3AE1684E7270071CFD3 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D6C5B3B21684E7270071CFD3 /* Agecel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Agecel-Info.plist"; sourceTree = "<group>"; };
+		D6C5B3B41684E7270071CFD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6C5B3B61684E7270071CFD3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D6C5B3B81684E7270071CFD3 /* Agecel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Agecel-Prefix.pch"; sourceTree = "<group>"; };
+		D6C5B3B91684E7270071CFD3 /* AGLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLAppDelegate.h; sourceTree = "<group>"; };
+		D6C5B3BA1684E7270071CFD3 /* AGLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLAppDelegate.m; sourceTree = "<group>"; };
+		D6C5B3BC1684E7270071CFD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		D6C5B3BE1684E7270071CFD3 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		D6C5B3C01684E7270071CFD3 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		D6C5B3C31684E7270071CFD3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		D6C5B3C51684E7270071CFD3 /* AGLFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLFirstViewController.h; sourceTree = "<group>"; };
+		D6C5B3C61684E7270071CFD3 /* AGLFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLFirstViewController.m; sourceTree = "<group>"; };
+		D6C5B3C81684E7270071CFD3 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
+		D6C5B3CA1684E7270071CFD3 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
+		D6C5B3CC1684E7270071CFD3 /* AGLSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLSecondViewController.h; sourceTree = "<group>"; };
+		D6C5B3CD1684E7270071CFD3 /* AGLSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AGLSecondViewController.m; sourceTree = "<group>"; };
+		D6C5B3CF1684E7270071CFD3 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
+		D6C5B3D11684E7270071CFD3 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D6C5B3A31684E7270071CFD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C5B3AB1684E7270071CFD3 /* UIKit.framework in Frameworks */,
+				D6C5B3AD1684E7270071CFD3 /* Foundation.framework in Frameworks */,
+				D6C5B3AF1684E7270071CFD3 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D6C5B39B1684E7270071CFD3 = {
+			isa = PBXGroup;
+			children = (
+				D6C5B3B01684E7270071CFD3 /* Agecel */,
+				D6C5B3A91684E7270071CFD3 /* Frameworks */,
+				D6C5B3A71684E7270071CFD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D6C5B3A71684E7270071CFD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5B3A61684E7270071CFD3 /* Agecel.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D6C5B3A91684E7270071CFD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5B3AA1684E7270071CFD3 /* UIKit.framework */,
+				D6C5B3AC1684E7270071CFD3 /* Foundation.framework */,
+				D6C5B3AE1684E7270071CFD3 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6C5B3B01684E7270071CFD3 /* Agecel */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5B3B91684E7270071CFD3 /* AGLAppDelegate.h */,
+				D6C5B3BA1684E7270071CFD3 /* AGLAppDelegate.m */,
+				D6C5B3C21684E7270071CFD3 /* MainStoryboard.storyboard */,
+				D6C5B3C51684E7270071CFD3 /* AGLFirstViewController.h */,
+				D6C5B3C61684E7270071CFD3 /* AGLFirstViewController.m */,
+				D6C5B3C81684E7270071CFD3 /* first.png */,
+				D6C5B3CA1684E7270071CFD3 /* first@2x.png */,
+				D6C5B3CC1684E7270071CFD3 /* AGLSecondViewController.h */,
+				D6C5B3CD1684E7270071CFD3 /* AGLSecondViewController.m */,
+				D6C5B3CF1684E7270071CFD3 /* second.png */,
+				D6C5B3D11684E7270071CFD3 /* second@2x.png */,
+				D6C5B3B11684E7270071CFD3 /* Supporting Files */,
+			);
+			path = Agecel;
+			sourceTree = "<group>";
+		};
+		D6C5B3B11684E7270071CFD3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D6C5B3B21684E7270071CFD3 /* Agecel-Info.plist */,
+				D6C5B3B31684E7270071CFD3 /* InfoPlist.strings */,
+				D6C5B3B61684E7270071CFD3 /* main.m */,
+				D6C5B3B81684E7270071CFD3 /* Agecel-Prefix.pch */,
+				D6C5B3BC1684E7270071CFD3 /* Default.png */,
+				D6C5B3BE1684E7270071CFD3 /* Default@2x.png */,
+				D6C5B3C01684E7270071CFD3 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D6C5B3A51684E7270071CFD3 /* Agecel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D6C5B3D51684E7270071CFD3 /* Build configuration list for PBXNativeTarget "Agecel" */;
+			buildPhases = (
+				D6C5B3A21684E7270071CFD3 /* Sources */,
+				D6C5B3A31684E7270071CFD3 /* Frameworks */,
+				D6C5B3A41684E7270071CFD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Agecel;
+			productName = Agecel;
+			productReference = D6C5B3A61684E7270071CFD3 /* Agecel.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D6C5B39D1684E7270071CFD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AGL;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Andre Furquim";
+			};
+			buildConfigurationList = D6C5B3A01684E7270071CFD3 /* Build configuration list for PBXProject "Agecel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D6C5B39B1684E7270071CFD3;
+			productRefGroup = D6C5B3A71684E7270071CFD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D6C5B3A51684E7270071CFD3 /* Agecel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D6C5B3A41684E7270071CFD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C5B3B51684E7270071CFD3 /* InfoPlist.strings in Resources */,
+				D6C5B3BD1684E7270071CFD3 /* Default.png in Resources */,
+				D6C5B3BF1684E7270071CFD3 /* Default@2x.png in Resources */,
+				D6C5B3C11684E7270071CFD3 /* Default-568h@2x.png in Resources */,
+				D6C5B3C41684E7270071CFD3 /* MainStoryboard.storyboard in Resources */,
+				D6C5B3C91684E7270071CFD3 /* first.png in Resources */,
+				D6C5B3CB1684E7270071CFD3 /* first@2x.png in Resources */,
+				D6C5B3D01684E7270071CFD3 /* second.png in Resources */,
+				D6C5B3D21684E7270071CFD3 /* second@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D6C5B3A21684E7270071CFD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D6C5B3B71684E7270071CFD3 /* main.m in Sources */,
+				D6C5B3BB1684E7270071CFD3 /* AGLAppDelegate.m in Sources */,
+				D6C5B3C71684E7270071CFD3 /* AGLFirstViewController.m in Sources */,
+				D6C5B3CE1684E7270071CFD3 /* AGLSecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D6C5B3B31684E7270071CFD3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C5B3B41684E7270071CFD3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D6C5B3C21684E7270071CFD3 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D6C5B3C31684E7270071CFD3 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D6C5B3D31684E7270071CFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D6C5B3D41684E7270071CFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D6C5B3D61684E7270071CFD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agecel/Agecel-Prefix.pch";
+				INFOPLIST_FILE = "Agecel/Agecel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D6C5B3D71684E7270071CFD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Agecel/Agecel-Prefix.pch";
+				INFOPLIST_FILE = "Agecel/Agecel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D6C5B3A01684E7270071CFD3 /* Build configuration list for PBXProject "Agecel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C5B3D31684E7270071CFD3 /* Debug */,
+				D6C5B3D41684E7270071CFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D6C5B3D51684E7270071CFD3 /* Build configuration list for PBXNativeTarget "Agecel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D6C5B3D61684E7270071CFD3 /* Debug */,
+				D6C5B3D71684E7270071CFD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D6C5B39D1684E7270071CFD3 /* Project object */;
+}
