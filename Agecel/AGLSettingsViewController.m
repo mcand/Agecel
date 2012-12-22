@@ -1,23 +1,23 @@
 //
-//  AGLFirstViewController.m
+//  AGLSettingsViewController.m
 //  Agecel
 //
 //  Created by Andre Furquim on 12/21/12.
 //  Copyright (c) 2012 Andre Furquim. All rights reserved.
 //
 
-#import "AGLFirstViewController.h"
+#import "AGLSettingsViewController.h"
 
-@interface AGLFirstViewController ()
+@interface AGLSettingsViewController ()
 
 @end
 
-@implementation AGLFirstViewController
+@implementation AGLSettingsViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning

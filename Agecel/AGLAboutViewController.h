@@ -1,5 +1,5 @@
 //
-//  AGLSecondViewController.h
+//  AGLAboutViewController.h
 //  Agecel
 //
 //  Created by Andre Furquim on 12/21/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGLSecondViewController : UIViewController
+@interface AGLAboutViewController : UIViewController
+
+@property(nonatomic, strong) IBOutlet UILabel *appVersion;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  AGLFirstViewController.h
+//  AGLSearchViewController.h
 //  Agecel
 //
 //  Created by Andre Furquim on 12/21/12.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGLFirstViewController : UIViewController
+@interface AGLSearchViewController : UIViewController
 
 @end
