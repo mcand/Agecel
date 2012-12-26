@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGLListViewController : UIViewController
-
+@interface AGLListViewController : UITableViewController 
+@property(strong, nonatomic) NSArray *estados;
 @end
