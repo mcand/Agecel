@@ -7,6 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66F73AB168647F00060FECE /* AGLState.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F73AA168647F00060FECE /* AGLState.m */; };
+		D679AF7316A0E976005F3151 /* acre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5816A0E976005F3151 /* acre.jpg */; };
+		D679AF7416A0E976005F3151 /* alagoas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5916A0E976005F3151 /* alagoas.jpg */; };
+		D679AF7516A0E976005F3151 /* amapa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5A16A0E976005F3151 /* amapa.jpg */; };
+		D679AF7616A0E976005F3151 /* amazonas.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5B16A0E976005F3151 /* amazonas.jpg */; };
+		D679AF7716A0E976005F3151 /* bahia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5C16A0E976005F3151 /* bahia.jpg */; };
+		D679AF7816A0E976005F3151 /* ceara.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5D16A0E976005F3151 /* ceara.jpg */; };
+		D679AF7916A0E976005F3151 /* df.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5E16A0E976005F3151 /* df.jpg */; };
+		D679AF7A16A0E976005F3151 /* espiritosanto.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF5F16A0E976005F3151 /* espiritosanto.jpg */; };
+		D679AF7B16A0E976005F3151 /* goias.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6016A0E976005F3151 /* goias.jpg */; };
+		D679AF7C16A0E976005F3151 /* maranhao.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6116A0E976005F3151 /* maranhao.jpg */; };
+		D679AF7D16A0E976005F3151 /* matogrosso.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6216A0E976005F3151 /* matogrosso.jpg */; };
+		D679AF7E16A0E976005F3151 /* matogrossodosul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6316A0E976005F3151 /* matogrossodosul.jpg */; };
+		D679AF7F16A0E976005F3151 /* minasgerais.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6416A0E976005F3151 /* minasgerais.jpg */; };
+		D679AF8016A0E976005F3151 /* para.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6516A0E976005F3151 /* para.jpg */; };
+		D679AF8116A0E976005F3151 /* paraiba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6616A0E976005F3151 /* paraiba.jpg */; };
+		D679AF8216A0E976005F3151 /* parana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6716A0E976005F3151 /* parana.jpg */; };
+		D679AF8316A0E976005F3151 /* pernambuco.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6816A0E976005F3151 /* pernambuco.jpg */; };
+		D679AF8416A0E976005F3151 /* piaui.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6916A0E976005F3151 /* piaui.jpg */; };
+		D679AF8516A0E976005F3151 /* riodejaneiro.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6A16A0E976005F3151 /* riodejaneiro.jpg */; };
+		D679AF8616A0E976005F3151 /* riograndedonorte.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6B16A0E976005F3151 /* riograndedonorte.jpg */; };
+		D679AF8716A0E976005F3151 /* riograndedosul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6C16A0E976005F3151 /* riograndedosul.jpg */; };
+		D679AF8816A0E976005F3151 /* rondonia.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6D16A0E976005F3151 /* rondonia.jpg */; };
+		D679AF8916A0E976005F3151 /* roraima.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6E16A0E976005F3151 /* roraima.jpg */; };
+		D679AF8A16A0E976005F3151 /* santacatarina.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF6F16A0E976005F3151 /* santacatarina.jpg */; };
+		D679AF8B16A0E976005F3151 /* saopaulo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF7016A0E976005F3151 /* saopaulo.jpg */; };
+		D679AF8C16A0E976005F3151 /* sergipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF7116A0E976005F3151 /* sergipe.jpg */; };
+		D679AF8D16A0E976005F3151 /* tocantins.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D679AF7216A0E976005F3151 /* tocantins.jpg */; };
+		D679AF9016A0EB10005F3151 /* AGLGeralListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D679AF8F16A0EB10005F3151 /* AGLGeralListViewController.m */; };
+		D6814BD916A0C4E700CA61CB /* Button.png in Resources */ = {isa = PBXBuildFile; fileRef = D6814BD516A0C4E700CA61CB /* Button.png */; };
+		D6814BDA16A0C4E700CA61CB /* Button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6814BD616A0C4E700CA61CB /* Button@2x.png */; };
+		D6814BDB16A0C4E700CA61CB /* ButtonHighlighted.png in Resources */ = {isa = PBXBuildFile; fileRef = D6814BD716A0C4E700CA61CB /* ButtonHighlighted.png */; };
+		D6814BDC16A0C4E700CA61CB /* ButtonHighlighted@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6814BD816A0C4E700CA61CB /* ButtonHighlighted@2x.png */; };
 		D6C5B3AB1684E7270071CFD3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AA1684E7270071CFD3 /* UIKit.framework */; };
 		D6C5B3AD1684E7270071CFD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AC1684E7270071CFD3 /* Foundation.framework */; };
 		D6C5B3AF1684E7270071CFD3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3AE1684E7270071CFD3 /* CoreGraphics.framework */; };
@@ -36,6 +69,41 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D66F73A9168647F00060FECE /* AGLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLState.h; sourceTree = "<group>"; };
+		D66F73AA168647F00060FECE /* AGLState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLState.m; sourceTree = "<group>"; };
+		D679AF5816A0E976005F3151 /* acre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = acre.jpg; sourceTree = "<group>"; };
+		D679AF5916A0E976005F3151 /* alagoas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = alagoas.jpg; sourceTree = "<group>"; };
+		D679AF5A16A0E976005F3151 /* amapa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amapa.jpg; sourceTree = "<group>"; };
+		D679AF5B16A0E976005F3151 /* amazonas.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = amazonas.jpg; sourceTree = "<group>"; };
+		D679AF5C16A0E976005F3151 /* bahia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bahia.jpg; sourceTree = "<group>"; };
+		D679AF5D16A0E976005F3151 /* ceara.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ceara.jpg; sourceTree = "<group>"; };
+		D679AF5E16A0E976005F3151 /* df.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = df.jpg; sourceTree = "<group>"; };
+		D679AF5F16A0E976005F3151 /* espiritosanto.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = espiritosanto.jpg; sourceTree = "<group>"; };
+		D679AF6016A0E976005F3151 /* goias.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = goias.jpg; sourceTree = "<group>"; };
+		D679AF6116A0E976005F3151 /* maranhao.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = maranhao.jpg; sourceTree = "<group>"; };
+		D679AF6216A0E976005F3151 /* matogrosso.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matogrosso.jpg; sourceTree = "<group>"; };
+		D679AF6316A0E976005F3151 /* matogrossodosul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = matogrossodosul.jpg; sourceTree = "<group>"; };
+		D679AF6416A0E976005F3151 /* minasgerais.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = minasgerais.jpg; sourceTree = "<group>"; };
+		D679AF6516A0E976005F3151 /* para.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = para.jpg; sourceTree = "<group>"; };
+		D679AF6616A0E976005F3151 /* paraiba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = paraiba.jpg; sourceTree = "<group>"; };
+		D679AF6716A0E976005F3151 /* parana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parana.jpg; sourceTree = "<group>"; };
+		D679AF6816A0E976005F3151 /* pernambuco.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = pernambuco.jpg; sourceTree = "<group>"; };
+		D679AF6916A0E976005F3151 /* piaui.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = piaui.jpg; sourceTree = "<group>"; };
+		D679AF6A16A0E976005F3151 /* riodejaneiro.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = riodejaneiro.jpg; sourceTree = "<group>"; };
+		D679AF6B16A0E976005F3151 /* riograndedonorte.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = riograndedonorte.jpg; sourceTree = "<group>"; };
+		D679AF6C16A0E976005F3151 /* riograndedosul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = riograndedosul.jpg; sourceTree = "<group>"; };
+		D679AF6D16A0E976005F3151 /* rondonia.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rondonia.jpg; sourceTree = "<group>"; };
+		D679AF6E16A0E976005F3151 /* roraima.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = roraima.jpg; sourceTree = "<group>"; };
+		D679AF6F16A0E976005F3151 /* santacatarina.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = santacatarina.jpg; sourceTree = "<group>"; };
+		D679AF7016A0E976005F3151 /* saopaulo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = saopaulo.jpg; sourceTree = "<group>"; };
+		D679AF7116A0E976005F3151 /* sergipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sergipe.jpg; sourceTree = "<group>"; };
+		D679AF7216A0E976005F3151 /* tocantins.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tocantins.jpg; sourceTree = "<group>"; };
+		D679AF8E16A0EB10005F3151 /* AGLGeralListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLGeralListViewController.h; sourceTree = "<group>"; };
+		D679AF8F16A0EB10005F3151 /* AGLGeralListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLGeralListViewController.m; sourceTree = "<group>"; };
+		D6814BD516A0C4E700CA61CB /* Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Button.png; sourceTree = "<group>"; };
+		D6814BD616A0C4E700CA61CB /* Button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Button@2x.png"; sourceTree = "<group>"; };
+		D6814BD716A0C4E700CA61CB /* ButtonHighlighted.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonHighlighted.png; sourceTree = "<group>"; };
+		D6814BD816A0C4E700CA61CB /* ButtonHighlighted@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ButtonHighlighted@2x.png"; sourceTree = "<group>"; };
 		D6C5B3A61684E7270071CFD3 /* Agecel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agecel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C5B3AA1684E7270071CFD3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6C5B3AC1684E7270071CFD3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -87,6 +155,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D679AF5716A0E976005F3151 /* Bandeiras */ = {
+			isa = PBXGroup;
+			children = (
+				D679AF5816A0E976005F3151 /* acre.jpg */,
+				D679AF5916A0E976005F3151 /* alagoas.jpg */,
+				D679AF5A16A0E976005F3151 /* amapa.jpg */,
+				D679AF5B16A0E976005F3151 /* amazonas.jpg */,
+				D679AF5C16A0E976005F3151 /* bahia.jpg */,
+				D679AF5D16A0E976005F3151 /* ceara.jpg */,
+				D679AF5E16A0E976005F3151 /* df.jpg */,
+				D679AF5F16A0E976005F3151 /* espiritosanto.jpg */,
+				D679AF6016A0E976005F3151 /* goias.jpg */,
+				D679AF6116A0E976005F3151 /* maranhao.jpg */,
+				D679AF6216A0E976005F3151 /* matogrosso.jpg */,
+				D679AF6316A0E976005F3151 /* matogrossodosul.jpg */,
+				D679AF6416A0E976005F3151 /* minasgerais.jpg */,
+				D679AF6516A0E976005F3151 /* para.jpg */,
+				D679AF6616A0E976005F3151 /* paraiba.jpg */,
+				D679AF6716A0E976005F3151 /* parana.jpg */,
+				D679AF6816A0E976005F3151 /* pernambuco.jpg */,
+				D679AF6916A0E976005F3151 /* piaui.jpg */,
+				D679AF6A16A0E976005F3151 /* riodejaneiro.jpg */,
+				D679AF6B16A0E976005F3151 /* riograndedonorte.jpg */,
+				D679AF6C16A0E976005F3151 /* riograndedosul.jpg */,
+				D679AF6D16A0E976005F3151 /* rondonia.jpg */,
+				D679AF6E16A0E976005F3151 /* roraima.jpg */,
+				D679AF6F16A0E976005F3151 /* santacatarina.jpg */,
+				D679AF7016A0E976005F3151 /* saopaulo.jpg */,
+				D679AF7116A0E976005F3151 /* sergipe.jpg */,
+				D679AF7216A0E976005F3151 /* tocantins.jpg */,
+			);
+			path = Bandeiras;
+			sourceTree = "<group>";
+		};
 		D6C5B39B1684E7270071CFD3 = {
 			isa = PBXGroup;
 			children = (
@@ -137,6 +239,10 @@
 				D6C5B3DF1684E8430071CFD3 /* AGLSettingsViewController.m */,
 				D6C5B3E11684E85E0071CFD3 /* AGLAboutViewController.h */,
 				D6C5B3E21684E85E0071CFD3 /* AGLAboutViewController.m */,
+				D66F73A9168647F00060FECE /* AGLState.h */,
+				D66F73AA168647F00060FECE /* AGLState.m */,
+				D679AF8E16A0EB10005F3151 /* AGLGeralListViewController.h */,
+				D679AF8F16A0EB10005F3151 /* AGLGeralListViewController.m */,
 			);
 			path = Agecel;
 			sourceTree = "<group>";
@@ -144,6 +250,10 @@
 		D6C5B3B11684E7270071CFD3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D6814BD516A0C4E700CA61CB /* Button.png */,
+				D6814BD616A0C4E700CA61CB /* Button@2x.png */,
+				D6814BD716A0C4E700CA61CB /* ButtonHighlighted.png */,
+				D6814BD816A0C4E700CA61CB /* ButtonHighlighted@2x.png */,
 				D6C5B3B21684E7270071CFD3 /* Agecel-Info.plist */,
 				D6C5B3B31684E7270071CFD3 /* InfoPlist.strings */,
 				D6C5B3B61684E7270071CFD3 /* main.m */,
@@ -158,6 +268,7 @@
 		D6C5B3E41684E9BF0071CFD3 /* res */ = {
 			isa = PBXGroup;
 			children = (
+				D679AF5716A0E976005F3151 /* Bandeiras */,
 				D6C5B3E51684E9BF0071CFD3 /* gear.png */,
 				D6C5B3E61684E9BF0071CFD3 /* info.png */,
 				D6C5B3E71684E9BF0071CFD3 /* logo.png */,
@@ -235,6 +346,37 @@
 				D6C5B3EE1684E9BF0071CFD3 /* search.png in Resources */,
 				D6C5B3F01684ED020071CFD3 /* Default.png in Resources */,
 				D6C5B3F21684F2B70071CFD3 /* Default@2x.png in Resources */,
+				D6814BD916A0C4E700CA61CB /* Button.png in Resources */,
+				D6814BDA16A0C4E700CA61CB /* Button@2x.png in Resources */,
+				D6814BDB16A0C4E700CA61CB /* ButtonHighlighted.png in Resources */,
+				D6814BDC16A0C4E700CA61CB /* ButtonHighlighted@2x.png in Resources */,
+				D679AF7316A0E976005F3151 /* acre.jpg in Resources */,
+				D679AF7416A0E976005F3151 /* alagoas.jpg in Resources */,
+				D679AF7516A0E976005F3151 /* amapa.jpg in Resources */,
+				D679AF7616A0E976005F3151 /* amazonas.jpg in Resources */,
+				D679AF7716A0E976005F3151 /* bahia.jpg in Resources */,
+				D679AF7816A0E976005F3151 /* ceara.jpg in Resources */,
+				D679AF7916A0E976005F3151 /* df.jpg in Resources */,
+				D679AF7A16A0E976005F3151 /* espiritosanto.jpg in Resources */,
+				D679AF7B16A0E976005F3151 /* goias.jpg in Resources */,
+				D679AF7C16A0E976005F3151 /* maranhao.jpg in Resources */,
+				D679AF7D16A0E976005F3151 /* matogrosso.jpg in Resources */,
+				D679AF7E16A0E976005F3151 /* matogrossodosul.jpg in Resources */,
+				D679AF7F16A0E976005F3151 /* minasgerais.jpg in Resources */,
+				D679AF8016A0E976005F3151 /* para.jpg in Resources */,
+				D679AF8116A0E976005F3151 /* paraiba.jpg in Resources */,
+				D679AF8216A0E976005F3151 /* parana.jpg in Resources */,
+				D679AF8316A0E976005F3151 /* pernambuco.jpg in Resources */,
+				D679AF8416A0E976005F3151 /* piaui.jpg in Resources */,
+				D679AF8516A0E976005F3151 /* riodejaneiro.jpg in Resources */,
+				D679AF8616A0E976005F3151 /* riograndedonorte.jpg in Resources */,
+				D679AF8716A0E976005F3151 /* riograndedosul.jpg in Resources */,
+				D679AF8816A0E976005F3151 /* rondonia.jpg in Resources */,
+				D679AF8916A0E976005F3151 /* roraima.jpg in Resources */,
+				D679AF8A16A0E976005F3151 /* santacatarina.jpg in Resources */,
+				D679AF8B16A0E976005F3151 /* saopaulo.jpg in Resources */,
+				D679AF8C16A0E976005F3151 /* sergipe.jpg in Resources */,
+				D679AF8D16A0E976005F3151 /* tocantins.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +393,8 @@
 				D6C5B3DD1684E7F20071CFD3 /* AGLListViewController.m in Sources */,
 				D6C5B3E01684E8430071CFD3 /* AGLSettingsViewController.m in Sources */,
 				D6C5B3E31684E85E0071CFD3 /* AGLAboutViewController.m in Sources */,
+				D66F73AB168647F00060FECE /* AGLState.m in Sources */,
+				D679AF9016A0EB10005F3151 /* AGLGeralListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +511,7 @@
 				D6C5B3D71684E7270071CFD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
