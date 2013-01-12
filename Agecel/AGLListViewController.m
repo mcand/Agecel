@@ -65,33 +65,6 @@
 
 }
 
-/*- (void)viewDidLoad
-{
-  [super viewDidLoad];
-  NSMutableArray *localStates = [NSMutableArray array];
-  AGLState *state = [[AGLState alloc] init];
-  state.stateName = @"São Paulo";
-  state.stateShortName=@"SP";
-  state.image = [UIImage imageNamed:@"sao-paulo.jpg"];
-  [localStates addObject:state];
-  state = [[AGLState alloc] init];
-  state.stateName = @"Paraná";
-  state.stateShortName=@"PR";
-  state.image = [UIImage imageNamed:@"parana.jpg"];
-  
-  [localStates addObject:state];
-  state = [[AGLState alloc] init];
-  state.stateName = @"Santa Catarina";
-  state.stateShortName = @"SC";
-  state.image = [UIImage imageNamed:@"santa.jpg"];
-  
-  [localStates addObject:state];
-  
-  self.states = localStates;
-	// Do any additional setup after loading the view.
-}
-*/
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
