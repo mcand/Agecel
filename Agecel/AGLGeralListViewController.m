@@ -28,6 +28,8 @@
 {
 
   [super viewDidLoad];
+  
+  
   NSMutableArray *localStates = [NSMutableArray array];
   
   AGLState *state = [[AGLState alloc] init];

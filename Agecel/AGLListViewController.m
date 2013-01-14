@@ -17,6 +17,43 @@
 
 -(void)viewDidLoad
 {
+  [super viewDidLoad];
+  
+  
+  
+  self.title = @"AGECEL";
+  
+  UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 400, 44)];
+  label.backgroundColor = [UIColor clearColor];
+  label.font = [UIFont boldSystemFontOfSize:20.0];
+  label.shadowColor = [UIColor colorWithWhite:0.0 alpha:0.5];
+  label.textAlignment = UITextAlignmentCenter;
+  label.textColor =[UIColor colorWithRed:0.0/255.0 green:88.0/255 blue:38.0/255 alpha:1.0];
+  label.text=self.title;
+  self.navigationItem.titleView = label;
+  
+  self.navigationController.navigationBar.tintColor = [UIColor
+                                                       colorWithRed:254.0/255
+                                                       green:198.0/255
+                                                       blue:60.0/255
+                                                       alpha:1];
+  
+  self.tabBarController.tabBar.tintColor = [UIColor
+                                            colorWithRed:0.0/255
+                                            green:116.0/255
+                                            blue:57.0/255
+                                            alpha:1];
+
+
+  UIImage *image = [UIImage imageNamed: @"navimage.png"];
+  UIImageView *imageView = [[UIImageView alloc] initWithImage: image];
+  
+  self.navigationItem.titleView = imageView;
+  
+}
+
+
+
   /*
   UIFont *buttonFont = [UIFont fontWithName:@"Noteworthy-Bold" size:17.0];
   UIColor *buttonColorDefault = [UIColor colorWithRed:90.0f/255.0f green:90.0f/255.0f blue:90.0f/255.0f alpha:1.0];
@@ -60,10 +97,6 @@
   [self.view addSubview:busca2];
    */
 
-
-
-
-}
 
 - (void)didReceiveMemoryWarning
 {
