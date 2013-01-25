@@ -8,7 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface AGLState : NSObject
+@interface AGLState : NSObject {
+  NSString *stateName;
+}
   @property(nonatomic, copy) NSString *stateName;
   @property(nonatomic, copy) NSString *stateShortName;
   @property(nonatomic, strong) UIImage *image;

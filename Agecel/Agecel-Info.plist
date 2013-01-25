@@ -16,9 +16,9 @@
 			<array>
 				<string>icon_retine.png</string>
 				<string>icone_normal.png</string>
+				<string>icon-iPhone.png</string>
+				<string>icon-iPhone@2x.png</string>
 			</array>
-			<key>UIPrerenderedIcon</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>
@@ -39,8 +39,6 @@
 	<true/>
 	<key>UIMainStoryboardFile</key>
 	<string>MainStoryboard</string>
-	<key>UIPrerenderedIcon</key>
-	<true/>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

@@ -252,16 +252,24 @@
         <scene sceneID="3Cx-56-t8v">
             <objects>
                 <tableViewController id="LZF-mX-bdv" customClass="AGLGeralListViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8ph-Qi-ulz">
+                    <tableView key="view" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="48" sectionHeaderHeight="22" sectionFooterHeight="22" id="8ph-Qi-ulz">
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="lmr-EI-WYv">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="LZF-mX-bdv" id="zcd-17-EaX"/>
+                            </connections>
+                        </searchBar>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="rha-84-1wu" detailTextLabel="Rbt-ij-OZ2" imageView="FgL-ta-5n7" style="IBUITableViewCellStyleValue1" id="dC4-NE-qSS">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="66" width="320" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rha-84-1wu">
@@ -275,30 +283,52 @@
                                             <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </label>
                                         <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="redraw" image="saopaulo.jpg" id="FgL-ta-5n7">
-                                            <rect key="frame" x="0.0" y="0.0" width="62" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="68" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </imageView>
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
+                                <color key="backgroundColor" red="0.53965970409999997" green="0.56196790519999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="LZF-mX-bdv" id="sd5-XP-DFZ"/>
-                            <outlet property="delegate" destination="LZF-mX-bdv" id="VjC-Rb-qod"/>
+                            <outlet property="delegate" destination="LZF-mX-bdv" id="OMY-vk-93v"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Estados" id="u8x-Zr-h8z"/>
+                    <connections>
+                        <outlet property="searchBar" destination="lmr-EI-WYv" id="V4U-Kw-pQF"/>
+                        <outlet property="searchDisplayController" destination="wdM-xE-jwi" id="gCd-5z-2dM"/>
+                        <outlet property="tableView" destination="8ph-Qi-ulz" id="NWL-Ng-Ah0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lYY-cc-gwR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <searchDisplayController id="7DH-ir-rqE">
+                    <connections>
+                        <outlet property="delegate" destination="LZF-mX-bdv" id="y9j-t2-qPg"/>
+                        <outlet property="searchContentsController" destination="LZF-mX-bdv" id="EVo-Ma-K2t"/>
+                        <outlet property="searchResultsDataSource" destination="LZF-mX-bdv" id="lcT-YD-gm5"/>
+                        <outlet property="searchResultsDelegate" destination="LZF-mX-bdv" id="ep8-Jc-xoV"/>
+                    </connections>
+                </searchDisplayController>
+                <searchDisplayController id="wdM-xE-jwi">
+                    <connections>
+                        <outlet property="delegate" destination="LZF-mX-bdv" id="Zq6-84-eX3"/>
+                        <outlet property="searchContentsController" destination="LZF-mX-bdv" id="ASL-xy-hpD"/>
+                        <outlet property="searchResultsDataSource" destination="LZF-mX-bdv" id="rGL-5x-4Tg"/>
+                        <outlet property="searchResultsDelegate" destination="LZF-mX-bdv" id="TRe-VC-Ldu"/>
+                    </connections>
+                </searchDisplayController>
             </objects>
             <point key="canvasLocation" x="183" y="-1582"/>
         </scene>
-        <!--Navigation Controller - Lista-->
+        <!--Navigation Controller - Agecel-->
         <scene sceneID="syl-Dt-F3s">
             <objects>
                 <navigationController id="xfV-S7-JHe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Lista" image="phone-book.png" id="f6Z-qh-PHU"/>
+                    <tabBarItem key="tabBarItem" title="Agecel" image="age.png" id="f6Z-qh-PHU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C6i-q4-bg4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -315,14 +345,41 @@
         </scene>
     </scenes>
     <resources>
+        <image name="age.png" width="39" height="29"/>
         <image name="gear.png" width="30" height="30"/>
         <image name="info.png" width="30" height="30"/>
         <image name="logo.png" width="231" height="101"/>
-        <image name="phone-book.png" width="30" height="30"/>
         <image name="saopaulo.jpg" width="108" height="75"/>
         <image name="search.png" width="30" height="30"/>
         <image name="teste.png" width="160" height="70"/>
     </resources>
+    <classes>
+        <class className="AGLAboutViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLAboutViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="appVersion" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AGLGeralListViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLGeralListViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="AGLListViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLListViewController.h"/>
+        </class>
+        <class className="AGLSearchViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLSearchViewController.h"/>
+        </class>
+        <class className="AGLSettingsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLSettingsViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

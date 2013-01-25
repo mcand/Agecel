@@ -8,6 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AGLGeralListViewController : UITableViewController
-@property(strong, nonatomic) NSArray *states;
+@interface AGLGeralListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate> {
+  IBOutlet UISearchBar *searchBar;
+  IBOutlet UITableView *tableView;
+}
+@property(strong, nonatomic) NSMutableArray *states;
+@property(strong, nonatomic) NSMutableArray *localStates;
+
 @end
