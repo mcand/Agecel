@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface Utils : UIViewController
-+(UIView *)getCustomNavBarView:(NSString *)title;
++ (BOOL) isIphone;
++ (BOOL) isIpad;
++ (BOOL) isPortrait;
++ (BOOL) isLandscape;
 @end

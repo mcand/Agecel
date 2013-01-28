@@ -207,8 +207,8 @@
                          green:127.0/255
                          blue:28.0/255
                          alpha:1];
-  //[self.tableView setDelegate:self];
   
+  //[self.tableView setDelegate:self];
   
 
 }
@@ -232,6 +232,12 @@
   return [self.localStates count];
 
 }
+
+
+-(void) searchBarSearchButtonClicked:(UISearchBar *)aSearchBar{
+  [searchBar resignFirstResponder];
+}
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -328,6 +334,7 @@
   
 }
 */
+
 
 //faz a busca sem ser case sensitive
 -(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{

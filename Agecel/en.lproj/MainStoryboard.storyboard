@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="-436" y="570"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--My Tab Bar Controller-->
         <scene sceneID="15">
             <objects>
-                <tabBarController id="4" sceneMemberID="viewController">
+                <tabBarController id="4" customClass="AGLMyTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="5">
                         <rect key="frame" x="0.0" y="431" width="320" height="49"/>
@@ -193,6 +193,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="WqZ-7c-zfv" kind="push" id="0rK-1o-Gvr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-cf-90e">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -234,8 +237,8 @@
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="top" type="default" id="QuQ-fk-gfa"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="leading" secondItem="K0d-cf-90e" secondAttribute="leading" type="default" id="YCk-kZ-cmd"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="trailing" secondItem="K0d-cf-90e" secondAttribute="trailing" type="default" id="YQk-ZM-u8R"/>
-                            <constraint firstItem="SE1-eP-hbP" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="52" id="fN5-fS-HNK"/>
                             <constraint firstItem="K0d-cf-90e" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kVp-kw-uAq"/>
+                            <constraint firstItem="SE1-eP-hbP" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="57" id="m6Q-wQ-cv9"/>
                             <constraint firstItem="SE1-eP-hbP" firstAttribute="centerX" secondItem="iPM-oA-cdr" secondAttribute="centerX" type="default" id="o51-LG-vMy"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="top" secondItem="K0d-cf-90e" secondAttribute="top" type="default" id="saq-Ax-P1v"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" constant="28" id="y7J-CE-2Cb"/>
@@ -289,7 +292,6 @@
                                     </subviews>
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
-                                <color key="backgroundColor" red="0.53965970409999997" green="0.56196790519999995" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -322,12 +324,38 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="183" y="-1582"/>
+            <point key="canvasLocation" x="119" y="-2486"/>
         </scene>
-        <!--Navigation Controller - Agecel-->
+        <!--Table View Controller - Root View Controller-->
+        <scene sceneID="VGh-Bh-sMe">
+            <objects>
+                <tableViewController id="WqZ-7c-zfv" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="kHB-5m-jNw">
+                        <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="qXL-Pk-b58">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="xvA-Yy-aOL"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9sy-wz-L0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="135" y="-1781"/>
+        </scene>
+        <!--My Navigation Controller - Agecel-->
         <scene sceneID="syl-Dt-F3s">
             <objects>
-                <navigationController id="xfV-S7-JHe" sceneMemberID="viewController">
+                <navigationController id="xfV-S7-JHe" customClass="AGLMyNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Agecel" image="age.png" id="f6Z-qh-PHU"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="C6i-q4-bg4">
@@ -369,6 +397,12 @@
         </class>
         <class className="AGLListViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLListViewController.h"/>
+        </class>
+        <class className="AGLMyNavigationController" superclassName="UINavigationController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLMyNavigationController.h"/>
+        </class>
+        <class className="AGLMyTabBarController" superclassName="UITabBarController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLMyTabBarController.h"/>
         </class>
         <class className="AGLSearchViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLSearchViewController.h"/>

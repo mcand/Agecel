@@ -47,6 +47,8 @@
 		D64CB3EE16B220F00030F016 /* saopaulo.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3E816B220F00030F016 /* saopaulo.png */; };
 		D64CB3EF16B220F00030F016 /* sergipe.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3E916B220F00030F016 /* sergipe.png */; };
 		D64CB3F016B220F00030F016 /* tocantins.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3EA16B220F00030F016 /* tocantins.png */; };
+		D64CB40416B233F20030F016 /* AGLMyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64CB40316B233F20030F016 /* AGLMyTabBarController.m */; };
+		D64CB40A16B2371F0030F016 /* AGLMyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64CB40916B2371F0030F016 /* AGLMyNavigationController.m */; };
 		D66E672416A3A2C50013B620 /* teste.png in Resources */ = {isa = PBXBuildFile; fileRef = D66E672316A3A2C50013B620 /* teste.png */; };
 		D66E672E16A440510013B620 /* navimage.png in Resources */ = {isa = PBXBuildFile; fileRef = D66E672D16A440510013B620 /* navimage.png */; };
 		D66F73AB168647F00060FECE /* AGLState.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F73AA168647F00060FECE /* AGLState.m */; };
@@ -109,6 +111,10 @@
 		D64CB3E816B220F00030F016 /* saopaulo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saopaulo.png; sourceTree = "<group>"; };
 		D64CB3E916B220F00030F016 /* sergipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sergipe.png; sourceTree = "<group>"; };
 		D64CB3EA16B220F00030F016 /* tocantins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tocantins.png; sourceTree = "<group>"; };
+		D64CB40216B233F20030F016 /* AGLMyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLMyTabBarController.h; sourceTree = "<group>"; };
+		D64CB40316B233F20030F016 /* AGLMyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLMyTabBarController.m; sourceTree = "<group>"; };
+		D64CB40816B2371F0030F016 /* AGLMyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLMyNavigationController.h; sourceTree = "<group>"; };
+		D64CB40916B2371F0030F016 /* AGLMyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLMyNavigationController.m; sourceTree = "<group>"; };
 		D66E672316A3A2C50013B620 /* teste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teste.png; sourceTree = "<group>"; };
 		D66E672D16A440510013B620 /* navimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navimage.png; sourceTree = "<group>"; };
 		D66F73A9168647F00060FECE /* AGLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLState.h; sourceTree = "<group>"; };
@@ -185,6 +191,7 @@
 		D62A7C1D16AA0B7D0087838C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D64CB40116B233A60030F016 /* Navigation  */,
 				D62A7C2416AA0C8E0087838C /* Utils */,
 				D62A7C2316AA0C0E0087838C /* Settings */,
 				D62A7C2216AA0C060087838C /* About */,
@@ -258,6 +265,17 @@
 				D62A7C2616AA0CAD0087838C /* Utils.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		D64CB40116B233A60030F016 /* Navigation  */ = {
+			isa = PBXGroup;
+			children = (
+				D64CB40216B233F20030F016 /* AGLMyTabBarController.h */,
+				D64CB40316B233F20030F016 /* AGLMyTabBarController.m */,
+				D64CB40816B2371F0030F016 /* AGLMyNavigationController.h */,
+				D64CB40916B2371F0030F016 /* AGLMyNavigationController.m */,
+			);
+			name = "Navigation ";
 			sourceTree = "<group>";
 		};
 		D679AF5716A0E976005F3151 /* Bandeiras */ = {
@@ -471,6 +489,8 @@
 				D679AF9016A0EB10005F3151 /* AGLGeralListViewController.m in Sources */,
 				D62A7C2716AA0CAD0087838C /* Utils.m in Sources */,
 				D60E8BEC16AB8B3F006F3414 /* EstadoCell.m in Sources */,
+				D64CB40416B233F20030F016 /* AGLMyTabBarController.m in Sources */,
+				D64CB40A16B2371F0030F016 /* AGLMyNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

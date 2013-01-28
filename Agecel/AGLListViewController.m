@@ -8,6 +8,7 @@
 
 #import "AGLListViewController.h"
 #import "AGLState.h"
+#import "Utils.h"
 
 @interface AGLListViewController ()
 
@@ -15,11 +16,18 @@
 
 @implementation AGLListViewController
 
+#pragma mark rotatio iOS6
+-(NSUInteger) supportedInterfaceOrientations {
+  // Todas menos de ponta cabeça
+  return UIInterfaceOrientationMaskPortrait;
+}
+
 -(void)viewDidLoad
 {
+
   [super viewDidLoad];
 
-  
+
 
   UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 400, 44)];
   label.backgroundColor = [UIColor clearColor];
