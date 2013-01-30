@@ -9,6 +9,7 @@
 #import "AGLGeralListViewController.h"
 #import "AGLState.h"
 #import "EstadoCell.h"
+#import "AGLEstadoViewController.h"
 
 @interface AGLGeralListViewController ()
 
@@ -299,41 +300,29 @@
 }
 */
 
+
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+  if ([segue.identifier isEqualToString:@"Estado"]) {
+    AGLEstadoViewController *controller = segue.destinationViewController;
+    controller.estado = self.chosenStateForSegue;
+  }
+}
+ 
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     */
+    NSInteger estado = indexPath.row;
+  AGLState *est = [self.localStates objectAtIndex:estado];
+  self.chosenStateForSegue = est;
+
+  [self performSegueWithIdentifier:@"Estado" sender:self ];
+
 }
 
 //faz a busca sem ser case sensitive
 
 #pragma mark -
-
-/*
-- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
-  NSLog(@"Foi chamado!");
-  
-  [self.localStates removeAllObjects];
-  
-  for(int i = 0; i < [self.states count]; i++) {
-    AGLState *s = [self.states objectAtIndex:i];
-
-    if ([s.stateName isEqualToString:searchText]) {
-      [self.localStates addObject:searchText];
-      NSLog(@"teste");
-    }
-    
-  }
-  NSLog(@"teste2 %@", self.localStates );
-[self.tableView reloadData];
-  
-}
-*/
 
 
 //faz a busca sem ser case sensitive
@@ -355,29 +344,6 @@
   [self.tableView reloadData];
   
 }
-//-(void) sea
 
-/*
-
-- (void)filterContentForSearchText:(NSString*)searchText scope:(NSString*)scope
-{
-  NSPredicate *resultPredicate = [NSPredicate
-                                  predicateWithFormat:@"SELF contains[cd] %@",
-                                  searchText];
-  
-  self.localStates = [self.states filteredArrayUsingPredicate:resultPredicate];
-}
-
--(BOOL)searchDispayController:(UISearchDisplayController *)controller
-shouldReloadTableForSearchString:(NSString *)searchString
-{
-  [self filterContentForSearchText:searchString
-                             scope:[[self.searchDisplayController.searchBar scopeButtonTitles]
-                                    objectAtIndex:[self.searchDisplayController.searchBar
-                                                   selectedScopeButtonIndex]]];
-  
-  return YES;
-}
-*/
 
 @end

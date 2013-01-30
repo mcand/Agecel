@@ -6,6 +6,7 @@
 //  Copyright (c) 2013 Andre Furquim. All rights reserved.
 //
 
+#import "AGLState.h"
 #import <UIKit/UIKit.h>
 
 @interface AGLGeralListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate> {
@@ -14,5 +15,6 @@
 }
 @property(strong, nonatomic) NSMutableArray *states;
 @property(strong, nonatomic) NSMutableArray *localStates;
+@property(strong, nonatomic) AGLState *chosenStateForSegue;
 
 @end
