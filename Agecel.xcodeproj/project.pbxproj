@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D605D13316BE544E00381FC9 /* AGLTransacaoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */; };
+		D605D13616BE562500381FC9 /* AGLStateService.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13516BE562500381FC9 /* AGLStateService.m */; };
 		D60E8BE816AB8784006F3414 /* EstadoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60E8BE716AB8784006F3414 /* EstadoCell.xib */; };
 		D60E8BEC16AB8B3F006F3414 /* EstadoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D60E8BEB16AB8B3F006F3414 /* EstadoCell.m */; };
 		D62A7A6416A86D8E0087838C /* age.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7A5F16A86D8E0087838C /* age.png */; };
@@ -20,6 +22,9 @@
 		D62A7AA616A8D77D0087838C /* icon-iPhone.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7AA416A8D77D0087838C /* icon-iPhone.png */; };
 		D62A7AA716A8D77D0087838C /* icon-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7AA516A8D77D0087838C /* icon-iPhone@2x.png */; };
 		D62A7C2716AA0CAD0087838C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D62A7C2616AA0CAD0087838C /* Utils.m */; };
+		D63AF9E216BCF6B200CAABE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3F3168512C00071CFD3 /* libsqlite3.dylib */; };
+		D63AF9E616BCF75300CAABE6 /* StateDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D63AF9E516BCF75300CAABE6 /* StateDB.m */; };
+		D63AF9E916BCF89E00CAABE6 /* AGLSQLiteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */; };
 		D64CB3CF16B220760030F016 /* alagoas.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3BA16B220760030F016 /* alagoas.png */; };
 		D64CB3D016B220760030F016 /* amapa.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3BB16B220760030F016 /* amapa.png */; };
 		D64CB3D116B220760030F016 /* amazonas.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3BC16B220760030F016 /* amazonas.png */; };
@@ -66,10 +71,14 @@
 		D6C5B3E01684E8430071CFD3 /* AGLSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3DF1684E8430071CFD3 /* AGLSettingsViewController.m */; };
 		D6C5B3E31684E85E0071CFD3 /* AGLAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C5B3E21684E85E0071CFD3 /* AGLAboutViewController.m */; };
 		D6C5B3EC1684E9BF0071CFD3 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = D6C5B3E71684E9BF0071CFD3 /* logo.png */; };
-		D6C5B3F4168512C10071CFD3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3F3168512C00071CFD3 /* libsqlite3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D605D13016BE53F100381FC9 /* AGLTransacao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLTransacao.h; sourceTree = "<group>"; };
+		D605D13116BE544E00381FC9 /* AGLTransacaoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTransacaoUtil.h; sourceTree = "<group>"; };
+		D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTransacaoUtil.m; sourceTree = "<group>"; };
+		D605D13416BE562500381FC9 /* AGLStateService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLStateService.h; sourceTree = "<group>"; };
+		D605D13516BE562500381FC9 /* AGLStateService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLStateService.m; sourceTree = "<group>"; };
 		D60E8BE716AB8784006F3414 /* EstadoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EstadoCell.xib; sourceTree = "<group>"; };
 		D60E8BEA16AB8B3F006F3414 /* EstadoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EstadoCell.h; sourceTree = "<group>"; };
 		D60E8BEB16AB8B3F006F3414 /* EstadoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EstadoCell.m; sourceTree = "<group>"; };
@@ -85,6 +94,10 @@
 		D62A7AA516A8D77D0087838C /* icon-iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iPhone@2x.png"; sourceTree = "<group>"; };
 		D62A7C2516AA0CAD0087838C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		D62A7C2616AA0CAD0087838C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		D63AF9E416BCF75300CAABE6 /* StateDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDB.h; sourceTree = "<group>"; };
+		D63AF9E516BCF75300CAABE6 /* StateDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateDB.m; sourceTree = "<group>"; };
+		D63AF9E716BCF89E00CAABE6 /* AGLSQLiteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLSQLiteHelper.h; sourceTree = "<group>"; };
+		D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLSQLiteHelper.m; sourceTree = "<group>"; };
 		D64CB3BA16B220760030F016 /* alagoas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alagoas.png; sourceTree = "<group>"; };
 		D64CB3BB16B220760030F016 /* amapa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amapa.png; sourceTree = "<group>"; };
 		D64CB3BC16B220760030F016 /* amazonas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amazonas.png; sourceTree = "<group>"; };
@@ -152,7 +165,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D6C5B3F4168512C10071CFD3 /* libsqlite3.dylib in Frameworks */,
+				D63AF9E216BCF6B200CAABE6 /* libsqlite3.dylib in Frameworks */,
 				D6C5B3AB1684E7270071CFD3 /* UIKit.framework in Frameworks */,
 				D6C5B3AD1684E7270071CFD3 /* Foundation.framework in Frameworks */,
 				D6C5B3AF1684E7270071CFD3 /* CoreGraphics.framework in Frameworks */,
@@ -194,6 +207,7 @@
 		D62A7C1D16AA0B7D0087838C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D63AF9E316BCF73000CAABE6 /* Database */,
 				D64CB40116B233A60030F016 /* Navigation  */,
 				D62A7C2416AA0C8E0087838C /* Utils */,
 				D62A7C2316AA0C0E0087838C /* Settings */,
@@ -241,6 +255,8 @@
 				D60E8BEB16AB8B3F006F3414 /* EstadoCell.m */,
 				D6851F8D16B8C0640005C6A1 /* AGLEstadoViewController.h */,
 				D6851F8E16B8C0640005C6A1 /* AGLEstadoViewController.m */,
+				D605D13416BE562500381FC9 /* AGLStateService.h */,
+				D605D13516BE562500381FC9 /* AGLStateService.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -268,8 +284,22 @@
 			children = (
 				D62A7C2516AA0CAD0087838C /* Utils.h */,
 				D62A7C2616AA0CAD0087838C /* Utils.m */,
+				D605D13016BE53F100381FC9 /* AGLTransacao.h */,
+				D605D13116BE544E00381FC9 /* AGLTransacaoUtil.h */,
+				D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */,
 			);
 			name = Utils;
+			sourceTree = "<group>";
+		};
+		D63AF9E316BCF73000CAABE6 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				D63AF9E416BCF75300CAABE6 /* StateDB.h */,
+				D63AF9E516BCF75300CAABE6 /* StateDB.m */,
+				D63AF9E716BCF89E00CAABE6 /* AGLSQLiteHelper.h */,
+				D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */,
+			);
+			name = Database;
 			sourceTree = "<group>";
 		};
 		D64CB40116B233A60030F016 /* Navigation  */ = {
@@ -320,7 +350,6 @@
 		D6C5B39B1684E7270071CFD3 = {
 			isa = PBXGroup;
 			children = (
-				D6C5B3F3168512C00071CFD3 /* libsqlite3.dylib */,
 				D6C5B3B01684E7270071CFD3 /* Agecel */,
 				D6C5B3A91684E7270071CFD3 /* Frameworks */,
 				D6C5B3A71684E7270071CFD3 /* Products */,
@@ -338,6 +367,7 @@
 		D6C5B3A91684E7270071CFD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D6C5B3F3168512C00071CFD3 /* libsqlite3.dylib */,
 				D6C5B3AA1684E7270071CFD3 /* UIKit.framework */,
 				D6C5B3AC1684E7270071CFD3 /* Foundation.framework */,
 				D6C5B3AE1684E7270071CFD3 /* CoreGraphics.framework */,
@@ -497,6 +527,10 @@
 				D64CB40416B233F20030F016 /* AGLMyTabBarController.m in Sources */,
 				D64CB40A16B2371F0030F016 /* AGLMyNavigationController.m in Sources */,
 				D6851F8F16B8C0640005C6A1 /* AGLEstadoViewController.m in Sources */,
+				D63AF9E616BCF75300CAABE6 /* StateDB.m in Sources */,
+				D63AF9E916BCF89E00CAABE6 /* AGLSQLiteHelper.m in Sources */,
+				D605D13316BE544E00381FC9 /* AGLTransacaoUtil.m in Sources */,
+				D605D13616BE562500381FC9 /* AGLStateService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

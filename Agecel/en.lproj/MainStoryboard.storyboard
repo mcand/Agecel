@@ -40,7 +40,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="12" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-975" y="-926"/>
+            <point key="canvasLocation" x="-655" y="-1246"/>
         </scene>
         <!--Search View Controller - Buscar-->
         <scene sceneID="kMh-bI-YCQ">
@@ -55,7 +55,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z8d-7c-EpW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-966" y="-214"/>
+            <point key="canvasLocation" x="-646" y="-534"/>
         </scene>
         <!--About View Controller - Sobre-->
         <scene sceneID="VPR-75-sWo">
@@ -103,7 +103,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CAS-oN-kCm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-436" y="570"/>
+            <point key="canvasLocation" x="-116" y="250"/>
         </scene>
         <!--My Tab Bar Controller-->
         <scene sceneID="15">
@@ -124,7 +124,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="14" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1512" y="-696"/>
+            <point key="canvasLocation" x="-1192" y="-1016"/>
         </scene>
         <!--Navigation Controller - Sobre-->
         <scene sceneID="abI-Ur-cY2">
@@ -143,9 +143,9 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="avN-RF-g97" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-962" y="570"/>
+            <point key="canvasLocation" x="-642" y="250"/>
         </scene>
-        <!--List View Controller-->
+        <!--List View Controller - Listas-->
         <scene sceneID="std-TR-3SB">
             <objects>
                 <viewController id="g2n-6I-aCk" customClass="AGLListViewController" sceneMemberID="viewController">
@@ -157,7 +157,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="81" id="D4m-Gn-H07"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Lista Estados" backgroundImage="teste.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.4801836223" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -174,7 +174,7 @@
                                     <constraint firstAttribute="width" constant="127" id="ONN-QZ-798"/>
                                     <constraint firstAttribute="height" constant="79" id="o4X-cK-K3o"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Lista Geral" backgroundImage="teste.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.4801836223" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -183,11 +183,11 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="WqZ-7c-zfv" kind="push" id="0rK-1o-Gvr"/>
+                                    <segue destination="WqZ-7c-zfv" kind="push" id="z03-0T-Q98"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0d-cf-90e">
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Lista Itens" backgroundImage="teste.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.4801836223" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -206,7 +206,7 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="122" id="H7N-hw-pet"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <state key="normal" title="Localização" backgroundImage="teste.png">
                                     <color key="titleColor" red="0.19607843459999999" green="0.48018362226277372" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -215,30 +215,45 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-28-zyC">
+                                <color key="backgroundColor" red="1" green="0.8406991332" blue="0.35703695260000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Geral"/>
+                                    <segment title="Estados"/>
+                                    <segment title="Localização"/>
+                                    <segment title="Itens"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="0.8406991332" blue="0.35703695260000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aTx-28-zyC" firstAttribute="trailing" secondItem="iPM-oA-cdr" secondAttribute="trailing" type="default" id="0K2-5P-EQG"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="top" secondItem="vOu-jR-Izc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="246-wI-NmU"/>
+                            <constraint firstItem="aTx-28-zyC" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="-1" id="Eyq-QH-FDz"/>
+                            <constraint firstItem="SE1-eP-hbP" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="43" id="Hne-6O-0jX"/>
                             <constraint firstAttribute="bottom" secondItem="uhV-4V-FCe" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Iwp-Bw-qtl"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="leading" secondItem="vOu-jR-Izc" secondAttribute="leading" type="default" id="LH4-vO-LNC"/>
                             <constraint firstAttribute="bottom" secondItem="K0d-cf-90e" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="M9L-hj-svu"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="trailing" secondItem="uhV-4V-FCe" secondAttribute="trailing" type="default" id="Mm5-WS-oyy"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="top" type="default" id="QuQ-fk-gfa"/>
+                            <constraint firstItem="aTx-28-zyC" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" type="default" id="UC2-L6-aHr"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="leading" secondItem="K0d-cf-90e" secondAttribute="leading" type="default" id="YCk-kZ-cmd"/>
+                            <constraint firstAttribute="trailing" secondItem="bSi-AI-k6I" secondAttribute="trailing" constant="30" id="YMB-OG-ROp"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="trailing" secondItem="K0d-cf-90e" secondAttribute="trailing" type="default" id="YQk-ZM-u8R"/>
                             <constraint firstItem="K0d-cf-90e" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kVp-kw-uAq"/>
-                            <constraint firstItem="SE1-eP-hbP" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="57" id="m6Q-wQ-cv9"/>
-                            <constraint firstItem="SE1-eP-hbP" firstAttribute="centerX" secondItem="iPM-oA-cdr" secondAttribute="centerX" type="default" id="o51-LG-vMy"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="top" secondItem="K0d-cf-90e" secondAttribute="top" type="default" id="saq-Ax-P1v"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" constant="28" id="y7J-CE-2Cb"/>
-                            <constraint firstItem="K0d-cf-90e" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" constant="168" id="y8u-9Y-W50"/>
+                            <constraint firstItem="aTx-28-zyC" firstAttribute="centerX" secondItem="SE1-eP-hbP" secondAttribute="centerX" type="default" id="z1T-ST-lot"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cq1-rD-6Wa"/>
+                    <navigationItem key="navigationItem" title="Listas" id="cq1-rD-6Wa">
+                        <barButtonItem key="rightBarButtonItem" style="plain" systemItem="refresh" id="bWB-Rf-P8U"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GpR-pQ-4vh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-449" y="-1608"/>
+            <point key="canvasLocation" x="-129" y="-1928"/>
         </scene>
         <!--Geral List View Controller - Estados-->
         <scene sceneID="3Cx-56-t8v">
@@ -316,7 +331,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="119" y="-2486"/>
+            <point key="canvasLocation" x="439" y="-2806"/>
         </scene>
         <!--Estado View Controller-->
         <scene sceneID="YJx-r1-fyq">
@@ -356,7 +371,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5s-4E-Q5d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="629" y="-2491"/>
+            <point key="canvasLocation" x="949" y="-2811"/>
         </scene>
         <!--Table View Controller - Root View Controller-->
         <scene sceneID="VGh-Bh-sMe">
@@ -382,7 +397,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9sy-wz-L0i" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="-1781"/>
+            <point key="canvasLocation" x="455" y="-1737"/>
         </scene>
         <!--My Navigation Controller - Agecel-->
         <scene sceneID="syl-Dt-F3s">
@@ -401,7 +416,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAm-2c-hza" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-975" y="-1608"/>
+            <point key="canvasLocation" x="-655" y="-1928"/>
         </scene>
     </scenes>
     <resources>
@@ -427,6 +442,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLGeralListViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="segment" candidateClass="UISegmentedControl"/>
                 <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
             </relationships>
         </class>

@@ -9,7 +9,7 @@
 #import "AGLState.h"
 
 @implementation AGLState
-@synthesize stateName, stateShortName, image;
+@synthesize stateName, stateShortName, imagePath, id_state;
 
 - (id)init {
   self = [super init];

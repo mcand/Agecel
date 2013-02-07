@@ -11,7 +11,8 @@
 @interface AGLState : NSObject {
   NSString *stateName;
 }
+  @property int id_state;
   @property(nonatomic, copy) NSString *stateName;
   @property(nonatomic, copy) NSString *stateShortName;
-  @property(nonatomic, strong) UIImage *image;
+  @property(nonatomic, strong) NSString *imagePath;
 @end

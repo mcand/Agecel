@@ -12,6 +12,7 @@
 @interface AGLGeralListViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate> {
   IBOutlet UISearchBar *searchBar;
   IBOutlet UITableView *tableView;
+  IBOutlet UISegmentedControl *segment;
 }
 @property(strong, nonatomic) NSMutableArray *states;
 @property(strong, nonatomic) NSMutableArray *localStates;
