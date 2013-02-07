@@ -215,36 +215,23 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="aTx-28-zyC">
-                                <color key="backgroundColor" red="1" green="0.8406991332" blue="0.35703695260000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <segments>
-                                    <segment title="Geral"/>
-                                    <segment title="Estados"/>
-                                    <segment title="Localização"/>
-                                    <segment title="Itens"/>
-                                </segments>
-                                <color key="tintColor" red="1" green="0.8406991332" blue="0.35703695260000001" alpha="1" colorSpace="calibratedRGB"/>
-                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="aTx-28-zyC" firstAttribute="trailing" secondItem="iPM-oA-cdr" secondAttribute="trailing" type="default" id="0K2-5P-EQG"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="top" secondItem="vOu-jR-Izc" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="246-wI-NmU"/>
-                            <constraint firstItem="aTx-28-zyC" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="-1" id="Eyq-QH-FDz"/>
                             <constraint firstItem="SE1-eP-hbP" firstAttribute="top" secondItem="iPM-oA-cdr" secondAttribute="top" constant="43" id="Hne-6O-0jX"/>
                             <constraint firstAttribute="bottom" secondItem="uhV-4V-FCe" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="Iwp-Bw-qtl"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="leading" secondItem="vOu-jR-Izc" secondAttribute="leading" type="default" id="LH4-vO-LNC"/>
                             <constraint firstAttribute="bottom" secondItem="K0d-cf-90e" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="M9L-hj-svu"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="trailing" secondItem="uhV-4V-FCe" secondAttribute="trailing" type="default" id="Mm5-WS-oyy"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="top" type="default" id="QuQ-fk-gfa"/>
-                            <constraint firstItem="aTx-28-zyC" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" type="default" id="UC2-L6-aHr"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="leading" secondItem="K0d-cf-90e" secondAttribute="leading" type="default" id="YCk-kZ-cmd"/>
                             <constraint firstAttribute="trailing" secondItem="bSi-AI-k6I" secondAttribute="trailing" constant="30" id="YMB-OG-ROp"/>
                             <constraint firstItem="bSi-AI-k6I" firstAttribute="trailing" secondItem="K0d-cf-90e" secondAttribute="trailing" type="default" id="YQk-ZM-u8R"/>
+                            <constraint firstItem="SE1-eP-hbP" firstAttribute="centerX" secondItem="iPM-oA-cdr" secondAttribute="centerX" type="default" id="fC7-Vh-TRj"/>
                             <constraint firstItem="K0d-cf-90e" firstAttribute="top" secondItem="bSi-AI-k6I" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="kVp-kw-uAq"/>
                             <constraint firstItem="uhV-4V-FCe" firstAttribute="top" secondItem="K0d-cf-90e" secondAttribute="top" type="default" id="saq-Ax-P1v"/>
                             <constraint firstItem="vOu-jR-Izc" firstAttribute="leading" secondItem="iPM-oA-cdr" secondAttribute="leading" constant="28" id="y7J-CE-2Cb"/>
-                            <constraint firstItem="aTx-28-zyC" firstAttribute="centerX" secondItem="SE1-eP-hbP" secondAttribute="centerX" type="default" id="z1T-ST-lot"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Listas" id="cq1-rD-6Wa">
