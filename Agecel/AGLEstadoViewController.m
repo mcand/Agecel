@@ -7,6 +7,7 @@
 //
 
 #import "AGLEstadoViewController.h"
+#import "AGLCitiesService.h"
 
 @interface AGLEstadoViewController ()
 
@@ -14,24 +15,15 @@
 
 @implementation AGLEstadoViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   self.title = [NSString stringWithFormat:@"%@", self.estado.stateName];
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  
+  citiesFromState = [[NSMutableArray alloc] initWithArray:[AGLCitiesService getCities:self.estado]];
+  
+  NSLog(@"Numero de cidades encontradas no estado e de : %d", [citiesFromState count]);
+  
 }
 
 - (void)didReceiveMemoryWarning
@@ -44,16 +36,14 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return [citiesFromState count];
 }
 
 
@@ -63,7 +53,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    cell.textLabel.text = [citiesFromState objectAtIndex:indexPath.row];
+  
     return cell;
 }
 

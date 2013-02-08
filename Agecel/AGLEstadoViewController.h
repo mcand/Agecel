@@ -10,7 +10,9 @@
 #import "AGLState.h"
 
 @interface AGLEstadoViewController : UITableViewController {
+  NSMutableArray *citiesFromState;
 }
 @property(nonatomic, strong) AGLState *estado;
+
 
 @end

@@ -38,7 +38,7 @@
       NSLog(@"Erro ao criar a tabela %d - %@", result, error);
     }
   } else {
-    NSLog(@"Erro ao criar ao abrir o banco de dados");
+    NSLog(@"Erro ao criar ou abrir o banco de dados");
   }
 }
 
