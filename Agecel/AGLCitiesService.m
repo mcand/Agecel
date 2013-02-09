@@ -16,9 +16,10 @@
 +(NSMutableArray *)getCities:(AGLState *)codState {
   AGLCityDB *db = [[AGLCityDB alloc]init];
   [db abrir:@"state"];
-  NSMutableArray *cities = [db getCitiesFromState:codState];
+  NSMutableArray *cities = [[NSMutableArray alloc] initWithArray:[db getCitiesFromState:codState]];
   if ([cities count]==0) {
     [self insertCitiesOnDatabase];
+    cities = [db getCitiesFromState:codState];
   }
   [db fechar];
   return cities;
@@ -59,7 +60,7 @@
   city.idState = 25;
   city.nameCity = @"São Paulo";
   [cityDB saveCity:city];
-  
+  [cityDB fechar];
 }
 
 @end

@@ -13,6 +13,8 @@
   NSMutableArray *citiesFromState;
 }
 @property(nonatomic, strong) AGLState *estado;
+@property(nonatomic, strong) NSMutableArray *citiesFromState;
+
 
 
 @end

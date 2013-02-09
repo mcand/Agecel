@@ -14,13 +14,14 @@
 @end
 
 @implementation AGLEstadoViewController
+@synthesize citiesFromState;
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   self.title = [NSString stringWithFormat:@"%@", self.estado.stateName];
   
-  citiesFromState = [[NSMutableArray alloc] initWithArray:[AGLCitiesService getCities:self.estado]];
+  self.citiesFromState = [[NSMutableArray alloc] initWithArray:[AGLCitiesService getCities:self.estado]];
   
   NSLog(@"Numero de cidades encontradas no estado e de : %d", [citiesFromState count]);
   

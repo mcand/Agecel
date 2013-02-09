@@ -43,9 +43,9 @@
   [searchBar setDelegate:self];
   
   searchBar.tintColor = [UIColor
-                         colorWithRed:233.0/255
-                         green:127.0/255
-                         blue:28.0/255
+                         colorWithRed:0.0/255
+                         green:116.0/255
+                         blue:57.0/255
                          alpha:1];
   
   //[self.tableView setDelegate:self];
