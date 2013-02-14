@@ -537,15 +537,15 @@
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
-         shouldBeEnabled = "Yes"
+         shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382108228.073509"
+         timestampString = "382560859.456725"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "+getCities:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -606,7 +606,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLEstadoViewController.m"
-         timestampString = "382111175.759917"
+         timestampString = "382557547.935682"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "23"
@@ -619,7 +619,7 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLEstadoViewController.m"
-         timestampString = "382111175.759917"
+         timestampString = "382558913.618109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "26"
@@ -632,12 +632,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCityDB.m"
-         timestampString = "382042670.791203"
+         timestampString = "382562245.01514"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "90"
-         endingLineNumber = "90"
-         landmarkName = "-getCitiesFromState:"
+         startingLineNumber = "92"
+         endingLineNumber = "92"
+         landmarkName = "-deleteCities"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -736,11 +736,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382107437.324037"
+         timestampString = "382558913.618109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "19"
-         endingLineNumber = "19"
+         startingLineNumber = "25"
+         endingLineNumber = "25"
          landmarkName = "+getCities:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -749,11 +749,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382109285.631739"
+         timestampString = "382560859.456725"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
+         startingLineNumber = "27"
+         endingLineNumber = "27"
          landmarkName = "+getCities:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -762,7 +762,46 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382108228.073509"
+         timestampString = "382560859.456725"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "29"
+         endingLineNumber = "29"
+         landmarkName = "+getCities:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382560859.456725"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "31"
+         endingLineNumber = "31"
+         landmarkName = "+getCities:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382560859.456725"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "28"
+         endingLineNumber = "28"
+         landmarkName = "+getCities:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382558913.618109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "23"
@@ -775,11 +814,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382108228.073509"
+         timestampString = "382558913.618109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "24"
-         endingLineNumber = "24"
+         startingLineNumber = "21"
+         endingLineNumber = "21"
          landmarkName = "+getCities:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -788,7 +827,31 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382108769.196303"
+         timestampString = "382557547.935682"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "13"
+         endingLineNumber = "13">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382558913.618109"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "26"
+         endingLineNumber = "26"
+         landmarkName = "+getCities:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382558913.618109"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "22"
@@ -801,12 +864,51 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Agecel/AGLCitiesService.m"
-         timestampString = "382111434.518057"
+         timestampString = "382560997.775293"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "18"
-         endingLineNumber = "18"
-         landmarkName = "+getCities:"
+         startingLineNumber = "43"
+         endingLineNumber = "43"
+         landmarkName = "+insertCitiesOnDatabase"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382561001.490569"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "44"
+         endingLineNumber = "44"
+         landmarkName = "+insertCitiesOnDatabase"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382561002.073095"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "45"
+         endingLineNumber = "45"
+         landmarkName = "+insertCitiesOnDatabase"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Agecel/AGLCitiesService.m"
+         timestampString = "382561002.63254"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "46"
+         endingLineNumber = "46"
+         landmarkName = "+insertCitiesOnDatabase"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

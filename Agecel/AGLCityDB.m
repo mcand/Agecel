@@ -1,4 +1,4 @@
- //
+   //
 //  AGLCityDB.m
 //  Agecel
 //
@@ -60,6 +60,24 @@
     }
     sqlite3_finalize(stmt);
   }
+}
+
+// Deleta a cidade
+-(bool) selectAcity:(NSInteger *)city {
+  int myInt = city;
+  char *sql = "select * from city where id_city=?;";
+  sqlite3_stmt *stmt;
+  int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
+  if (resultado == SQLITE_OK) {
+    // infroma o id para deletar
+    sqlite3_bind_int(stmt, 1, myInt);
+//    resultado = sqlite3_step(stmt);
+    if (sqlite3_step(stmt) == SQLITE_ROW) {
+      return true;
+    }
+    sqlite3_finalize(stmt);
+  }
+  return false;
 }
 
 // Deleta todas as cidades

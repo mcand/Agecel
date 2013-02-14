@@ -20,7 +20,7 @@
 {
   [super viewDidLoad];
   self.title = [NSString stringWithFormat:@"%@", self.estado.stateName];
-  
+    
   self.citiesFromState = [[NSMutableArray alloc] initWithArray:[AGLCitiesService getCities:self.estado]];
   
   NSLog(@"Numero de cidades encontradas no estado e de : %d", [citiesFromState count]);

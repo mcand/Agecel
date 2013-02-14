@@ -24,6 +24,10 @@
 // Deleta todas as cidades
 -(void) deleteCities;
 
+
+// Seelciona uma ciddade ?
+-(bool) selectAcity:(NSInteger *)city;
+
 // Seleciona todos as cidades de um estado
 -(NSMutableArray *)getCitiesFromState:(AGLState *)state;
 

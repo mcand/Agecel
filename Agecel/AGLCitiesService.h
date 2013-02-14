@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "AGLState.h"
 
-@interface AGLCitiesService : NSObject
+@interface AGLCitiesService : NSObject {
+}
 // Pega todos os estados
 +(NSMutableArray *)getCities:(AGLState *)codState;
-+(void)insertCitiesOnDatabase;
++(void) insertCitiesOnDatabase;
 @end
