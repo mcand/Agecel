@@ -38,7 +38,6 @@
     
   self.localStates = [NSMutableArray arrayWithArray:[AGLStateService getStates]];
   
-  // Do any additional setup after loading the view.
   
   [searchBar setDelegate:self];
   
@@ -47,12 +46,6 @@
                          green:116.0/255
                          blue:57.0/255
                          alpha:1];
-  
-  //[self.tableView setDelegate:self];
-  
-  
-  
-
 }
 
 - (void)didReceiveMemoryWarning

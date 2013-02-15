@@ -40,20 +40,20 @@
   AGLCity *city = [[AGLCity alloc]init];
 
   
-  if ([cityDB selectAcity:1] == false) {
+  if (![cityDB selectAcity:1]) {
   city.idState = 16;
   city.nameCity = @"Curitiba";
   [cityDB saveCity:city];
   }
 
-  if ([cityDB selectAcity:2] == false) {
+  if (![cityDB selectAcity:2]) {
   city = [[AGLCity alloc]init];
   city.idState = 16;
   city.nameCity = @"Francisco Beltrao";
   [cityDB saveCity:city];
   }
   
-  if ([cityDB selectAcity:3] == false) {
+  if (![cityDB selectAcity:3]) {
 
   city = [[AGLCity alloc]init];
   city.idState =  16;
@@ -61,7 +61,7 @@
   [cityDB saveCity:city];
   }
   
-  if ([cityDB selectAcity:4] == false) {
+  if (![cityDB selectAcity:4]) {
 
   city = [[AGLCity alloc]init];
   city.idState = 24;
@@ -69,7 +69,7 @@
   [cityDB saveCity:city];
   }
   
-  if ([cityDB selectAcity:5] == false) {
+  if (![cityDB selectAcity:5]) {
 
   city = [[AGLCity alloc]init];
   city.idState = 24;
@@ -77,7 +77,7 @@
   [cityDB saveCity:city];
   }
   
-  if ([cityDB selectAcity:6]== false) {
+  if (![cityDB selectAcity:6]) {
 
   city = [[AGLCity alloc]init];
   city.idState = 25;

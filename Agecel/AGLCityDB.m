@@ -69,9 +69,8 @@
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if (resultado == SQLITE_OK) {
-    // infroma o id para deletar
+    // informa o id para deletar
     sqlite3_bind_int(stmt, 1, myInt);
-//    resultado = sqlite3_step(stmt);
     if (sqlite3_step(stmt) == SQLITE_ROW) {
       return true;
     }
@@ -93,7 +92,7 @@
 
 // Seleciona todos as cidades de um estado
 -(NSMutableArray *)getCitiesFromState:(AGLState *)state {
-  NSString *query = @"SELECT c.name_city FROM city c JOIN state s ON c.id_state=s.id_state where s.id_state=?;";
+  NSString *query = @"SELECT c.name_city, c.id_city, s.id_state FROM city c JOIN state s ON c.id_state=s.id_state where s.id_state=?;";
   sqlite3_stmt *stmt;
   NSMutableArray *cities = [[NSMutableArray alloc]init];
   int resultado = sqlite3_prepare_v2(bancoDeDados,[query UTF8String], -1, &stmt, nil);
@@ -101,11 +100,12 @@
   sqlite3_bind_int(stmt, 1, state.id_state);
   if (resultado == SQLITE_OK) {
     while (sqlite3_step(stmt) == SQLITE_ROW) {
-      char *row = (char *)sqlite3_column_text(stmt, 0);
-      NSString *aCity = [[NSString alloc]init];
-      aCity = row != nil ? [NSString stringWithUTF8String:row] : nil;
-      NSLog(@"Cidade %@", aCity);
-      [cities addObject:aCity];
+      AGLCity *city = [[AGLCity alloc]init];
+      char *column = (char *)sqlite3_column_text(stmt, 0);
+      city.nameCity = column != nil ? [NSString stringWithUTF8String:column] : nil;
+      city.idCity = sqlite3_column_int(stmt, 1);
+      city.idState = sqlite3_column_int(stmt, 2);
+      [cities addObject:city];
     }
   }
   return cities;
