@@ -352,7 +352,7 @@
                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </view>
                                 <connections>
-                                    <segue destination="BFs-4x-e9f" kind="push" identifier="Estabelecimento" id="IX2-Aa-0xv"/>
+                                    <segue destination="BFs-4x-e9f" kind="push" identifier="Estabelecimento" trigger="accessoryAction" id="3wu-2e-qte"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
