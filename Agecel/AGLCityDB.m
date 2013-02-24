@@ -14,7 +14,7 @@
 
 // Retorna o SQL para criar a cidade
 -(NSString *)getSQLCreate{
-  NSString *sql = @"create table if not exists city (id_city integer primary key autoincrement, id_state integer, name_city text, foreign key(id_state) references state(id_state));";
+  NSString *sql = @"create table if not exists city (id_city integer primary key autoincrement, id_state integer, name_city text, foreign key(id_state) references state(id_state) on delete cascade);";
   return sql;
 }
 

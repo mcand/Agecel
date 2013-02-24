@@ -456,48 +456,6 @@
         <image name="search.png" width="30" height="30"/>
         <image name="teste.png" width="160" height="70"/>
     </resources>
-    <classes>
-        <class className="AGLAboutViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLAboutViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="appVersion" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="AGLEstabelecimentosCidadeViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLEstabelecimentosCidadeViewController.h"/>
-        </class>
-        <class className="AGLEstadoViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLEstadoViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="AGLGeralListViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLGeralListViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
-            </relationships>
-        </class>
-        <class className="AGLListViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLListViewController.h"/>
-        </class>
-        <class className="AGLMyNavigationController" superclassName="UINavigationController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLMyNavigationController.h"/>
-        </class>
-        <class className="AGLMyTabBarController" superclassName="UITabBarController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLMyTabBarController.h"/>
-        </class>
-        <class className="AGLSearchViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLSearchViewController.h"/>
-        </class>
-        <class className="AGLSettingsViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLSettingsViewController.h"/>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
