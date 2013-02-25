@@ -14,7 +14,7 @@
 
 // Retorna o SQL para criar um estado
 -(NSString *)getSQLCreate {
-  NSString *sql = @"create table if not exists state (id_state integer primary key autoincrement, name_state text, image_name text, short_name text);";
+  NSString *sql = @"pragma foreign_keys=true; create table if not exists state (id_state integer primary key autoincrement, name_state text, image_name text, short_name text);";
   return sql;
 }
 
