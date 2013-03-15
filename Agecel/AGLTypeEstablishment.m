@@ -9,6 +9,6 @@
 #import "AGLTypeEstablishment.h"
 
 @implementation AGLTypeEstablishment
-@synthesize id_type_establishment, id_city, id_type_name_establishment;
+@synthesize idTypeEstablishment, typeNameEstablishment;
 
 @end

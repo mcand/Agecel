@@ -53,6 +53,7 @@
     sqlite3_finalize(stmt);
 }
 
+//esta funcionalidade será colocada na Establishment
 // Retorna todos os tipos de estabelecimento de uma cidade
 -(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *)city{
     // Array que vai armazenar a lista de tipos de estabelecimento

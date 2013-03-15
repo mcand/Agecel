@@ -28,10 +28,10 @@
 -(void) deleteTypeEstablishments;
 
 // Deleta todos os tipos de estabelecimentos de uma cidade
--(void) deleteEstablishmentFromCities:(AGLCity *)city;
+//-(void) deleteEstablishmentFromCities:(AGLCity *)city;
 
-///// Retorna todos os tipos de estabelecimento de uma cidade
--(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city;
+// Retorna todos os tipos de estabelecimento de uma cidade
+//-(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city;
 
 
 @end
