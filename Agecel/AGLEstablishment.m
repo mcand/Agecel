@@ -9,5 +9,6 @@
 #import "AGLEstablishment.h"
 
 @implementation AGLEstablishment
+@synthesize idCity, idEstablishment, idTypeEstablishment, nameEstablishment;
 
 @end

@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F01079D16DADD5B00DC2625 /* AGLTypeNameEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F01079C16DADD5900DC2625 /* AGLTypeNameEstablishment.m */; };
 		8FE26B2916F2AD3F006E335E /* AGLEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */; };
 		8FE4696216D4686E00AD1462 /* AGLTypeEstablishmentDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */; };
-		8FE4696516DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696416DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.m */; };
 		8FE4696816DA935700AD1462 /* AGLTypeEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */; };
 		D605D13316BE544E00381FC9 /* AGLTransacaoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */; };
 		D605D13616BE562500381FC9 /* AGLStateService.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13516BE562500381FC9 /* AGLStateService.m */; };
@@ -59,6 +57,11 @@
 		D64CB3F016B220F00030F016 /* tocantins.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3EA16B220F00030F016 /* tocantins.png */; };
 		D64CB40416B233F20030F016 /* AGLMyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64CB40316B233F20030F016 /* AGLMyTabBarController.m */; };
 		D64CB40A16B2371F0030F016 /* AGLMyNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D64CB40916B2371F0030F016 /* AGLMyNavigationController.m */; };
+		D6628B1716F3E4440063ED24 /* AGLEstablishmentDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628B1616F3E4440063ED24 /* AGLEstablishmentDB.m */; };
+		D6628B1A16F3EE730063ED24 /* AGLContact.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628B1916F3EE730063ED24 /* AGLContact.m */; };
+		D6628B1D16F3EF750063ED24 /* AGLAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628B1C16F3EF750063ED24 /* AGLAddress.m */; };
+		D6628B2016F3F15B0063ED24 /* AGLContactDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628B1F16F3F15A0063ED24 /* AGLContactDB.m */; };
+		D6628B2316F3F9530063ED24 /* AGLAddressDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D6628B2216F3F9530063ED24 /* AGLAddressDB.m */; };
 		D66E672416A3A2C50013B620 /* teste.png in Resources */ = {isa = PBXBuildFile; fileRef = D66E672316A3A2C50013B620 /* teste.png */; };
 		D66E672E16A440510013B620 /* navimage.png in Resources */ = {isa = PBXBuildFile; fileRef = D66E672D16A440510013B620 /* navimage.png */; };
 		D66F73AB168647F00060FECE /* AGLState.m in Sources */ = {isa = PBXBuildFile; fileRef = D66F73AA168647F00060FECE /* AGLState.m */; };
@@ -83,14 +86,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F01079B16DADD5900DC2625 /* AGLTypeNameEstablishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeNameEstablishment.h; sourceTree = "<group>"; };
-		8F01079C16DADD5900DC2625 /* AGLTypeNameEstablishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeNameEstablishment.m; sourceTree = "<group>"; };
 		8FE26B2716F2AD3F006E335E /* AGLEstablishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstablishment.h; sourceTree = "<group>"; };
 		8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstablishment.m; sourceTree = "<group>"; };
 		8FE4696016D4686E00AD1462 /* AGLTypeEstablishmentDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeEstablishmentDB.h; sourceTree = "<group>"; };
 		8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeEstablishmentDB.m; sourceTree = "<group>"; };
-		8FE4696316DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeNameEstablishmentDB.h; sourceTree = "<group>"; };
-		8FE4696416DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeNameEstablishmentDB.m; sourceTree = "<group>"; };
 		8FE4696616DA935700AD1462 /* AGLTypeEstablishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeEstablishment.h; sourceTree = "<group>"; };
 		8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeEstablishment.m; sourceTree = "<group>"; };
 		D605D13016BE53F100381FC9 /* AGLTransacao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLTransacao.h; sourceTree = "<group>"; };
@@ -148,6 +147,16 @@
 		D64CB40316B233F20030F016 /* AGLMyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLMyTabBarController.m; sourceTree = "<group>"; };
 		D64CB40816B2371F0030F016 /* AGLMyNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLMyNavigationController.h; sourceTree = "<group>"; };
 		D64CB40916B2371F0030F016 /* AGLMyNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLMyNavigationController.m; sourceTree = "<group>"; };
+		D6628B1516F3E4440063ED24 /* AGLEstablishmentDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstablishmentDB.h; sourceTree = "<group>"; };
+		D6628B1616F3E4440063ED24 /* AGLEstablishmentDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstablishmentDB.m; sourceTree = "<group>"; };
+		D6628B1816F3EE720063ED24 /* AGLContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLContact.h; sourceTree = "<group>"; };
+		D6628B1916F3EE730063ED24 /* AGLContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLContact.m; sourceTree = "<group>"; };
+		D6628B1B16F3EF750063ED24 /* AGLAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLAddress.h; sourceTree = "<group>"; };
+		D6628B1C16F3EF750063ED24 /* AGLAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLAddress.m; sourceTree = "<group>"; };
+		D6628B1E16F3F15A0063ED24 /* AGLContactDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLContactDB.h; sourceTree = "<group>"; };
+		D6628B1F16F3F15A0063ED24 /* AGLContactDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLContactDB.m; sourceTree = "<group>"; };
+		D6628B2116F3F9520063ED24 /* AGLAddressDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLAddressDB.h; sourceTree = "<group>"; };
+		D6628B2216F3F9530063ED24 /* AGLAddressDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLAddressDB.m; sourceTree = "<group>"; };
 		D66E672316A3A2C50013B620 /* teste.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = teste.png; sourceTree = "<group>"; };
 		D66E672D16A440510013B620 /* navimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = navimage.png; sourceTree = "<group>"; };
 		D66F73A9168647F00060FECE /* AGLState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLState.h; sourceTree = "<group>"; };
@@ -337,12 +346,18 @@
 				8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */,
 				8FE4696016D4686E00AD1462 /* AGLTypeEstablishmentDB.h */,
 				8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */,
-				8FE4696316DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.h */,
-				8FE4696416DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.m */,
 				8FE4696616DA935700AD1462 /* AGLTypeEstablishment.h */,
 				8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */,
-				8F01079B16DADD5900DC2625 /* AGLTypeNameEstablishment.h */,
-				8F01079C16DADD5900DC2625 /* AGLTypeNameEstablishment.m */,
+				D6628B1516F3E4440063ED24 /* AGLEstablishmentDB.h */,
+				D6628B1616F3E4440063ED24 /* AGLEstablishmentDB.m */,
+				D6628B1816F3EE720063ED24 /* AGLContact.h */,
+				D6628B1916F3EE730063ED24 /* AGLContact.m */,
+				D6628B1B16F3EF750063ED24 /* AGLAddress.h */,
+				D6628B1C16F3EF750063ED24 /* AGLAddress.m */,
+				D6628B1E16F3F15A0063ED24 /* AGLContactDB.h */,
+				D6628B1F16F3F15A0063ED24 /* AGLContactDB.m */,
+				D6628B2116F3F9520063ED24 /* AGLAddressDB.h */,
+				D6628B2216F3F9530063ED24 /* AGLAddressDB.m */,
 			);
 			name = Database;
 			sourceTree = "<group>";
@@ -581,10 +596,13 @@
 				D6FFFFC316C56C98007CF2D9 /* AGLCitiesService.m in Sources */,
 				D6E219FF16CEB4C4006F45DD /* AGLEstabelecimentosCidadeViewController.m in Sources */,
 				8FE4696216D4686E00AD1462 /* AGLTypeEstablishmentDB.m in Sources */,
-				8FE4696516DA8EC600AD1462 /* AGLTypeNameEstablishmentDB.m in Sources */,
 				8FE4696816DA935700AD1462 /* AGLTypeEstablishment.m in Sources */,
-				8F01079D16DADD5B00DC2625 /* AGLTypeNameEstablishment.m in Sources */,
 				8FE26B2916F2AD3F006E335E /* AGLEstablishment.m in Sources */,
+				D6628B1716F3E4440063ED24 /* AGLEstablishmentDB.m in Sources */,
+				D6628B1A16F3EE730063ED24 /* AGLContact.m in Sources */,
+				D6628B1D16F3EF750063ED24 /* AGLAddress.m in Sources */,
+				D6628B2016F3F15B0063ED24 /* AGLContactDB.m in Sources */,
+				D6628B2316F3F9530063ED24 /* AGLAddressDB.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
