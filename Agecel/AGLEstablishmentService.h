@@ -7,15 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "AGLTypeEstablishment.h"
 #import "AGLCity.h"
 
 @interface AGLEstablishmentService : NSObject
 
 // Pega todos os tipos de estabelecimentos de uma cidade
-+(NSMutableArray *)getEstablishmentsFromCity:(AGLCity *)city;
-+(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *) city;
-
++(NSMutableArray *)getEstablishmentsFromCity:(AGLCity *)city withType:(AGLTypeEstablishment *)type;
 +(void)insertEstablishmentsOnDatabase;
-
++(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *) city;
 
 @end

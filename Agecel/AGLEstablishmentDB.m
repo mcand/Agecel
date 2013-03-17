@@ -57,16 +57,17 @@
 
 
 // Retorna todos os tipos de estabelecimento de uma cidade
--(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city{
+-(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city withType:(AGLTypeEstablishment *)type{
   // Array que vai armazenar a lista de tipos de estabelecimento
   NSMutableArray *establishments = [[NSMutableArray alloc] init];
   // SQL para selecionar as cidades
-  NSString *query = @"select id_establishment, id_city, id_type_establishment, name_establishment from establishment where id_city = ? order by id_establishment;";
+  NSString *query = @"select distinct id_establishment, id_city, id_type_establishment, name_establishment from establishment where id_city = ? and id_type_establishment = ? order by id_establishment;";
   sqlite3_stmt *stmt;
   // cria o stmt
   int resultado = sqlite3_prepare_v2(bancoDeDados,[query UTF8String], -1, &stmt, nil);
   if (resultado == SQLITE_OK) {
     sqlite3_bind_int(stmt, 1, city.idCity);
+    sqlite3_bind_int(stmt, 2, type.idTypeEstablishment);
     while (sqlite3_step(stmt) == SQLITE_ROW) {
       AGLEstablishment *establishment = [[AGLEstablishment alloc] init];
       establishment.idEstablishment = sqlite3_column_int(stmt, 0);
@@ -109,4 +110,21 @@
     return typeNameEstablishments;
 
 }
+
+// seleciona o estabelecimento
+-(bool) existEstablishmentWithCod:(NSInteger *)codEstablishment {
+    char *sql = "select id_establishment from establishment where id_establishment = ?;";
+    sqlite3_stmt *stmt;
+    int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
+    if (resultado == SQLITE_OK) {
+        // informa o id
+        sqlite3_bind_int(stmt, 1, codEstablishment);
+        if (sqlite3_step(stmt) == SQLITE_ROW) {
+            return true;
+        }
+        sqlite3_finalize(stmt);
+    }
+    return false;
+}
+
 @end

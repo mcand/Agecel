@@ -1,38 +1,37 @@
 //
-//  AGLEstabelecimentosCidadeViewController.m
+//  AGLEstabelecimentosViewController.m
 //  Agecel
 //
-//  Created by Andre Furquim on 2/15/13.
+//  Created by Gilmar Araujo on 3/17/13.
 //  Copyright (c) 2013 Andre Furquim. All rights reserved.
 //
 
-#import "AGLEstabelecimentosCidadeViewController.h"
+#import "AGLEstabelecimentosViewController.h"
 #import "AGLEstablishmentService.h"
 #import "AGLEstablishment.h"
-#import "AGLTypeEstablishment.h"
-#import "AGLEstabelecimentosViewController.h"
+#import "AGLEstablishmentDetailsViewController.h"
 
-@interface AGLEstabelecimentosCidadeViewController ()
+@interface AGLEstabelecimentosViewController ()
 
 @end
 
-@implementation AGLEstabelecimentosCidadeViewController
-@synthesize city, typeNameEstablishmentsFromCity, localTypeEstablishmentsFromCity;
+@implementation AGLEstabelecimentosViewController
+@synthesize typeEstablishment, establishmentsFromCity, localEstablishmentsFromCity, chosenEstablishmentForSegue,city;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  
-    self.title = [NSString stringWithFormat:@"%@", self.city.nameCity];
+
+    self.title = [NSString stringWithFormat:@"%@", typeEstablishment.typeNameEstablishment];
     
     // Pega todos os tipo de estabelecimentos de uma cidade
-    self.typeNameEstablishmentsFromCity = [[NSMutableArray alloc] initWithArray:[AGLEstablishmentService getTypeNameEstablishmentsFromCity:self.city]];
+    self.establishmentsFromCity = [[NSMutableArray alloc] initWithArray:[AGLEstablishmentService getEstablishmentsFromCity:city withType:typeEstablishment]];
     
     
-    NSLog(@"Numero de cidades encontradas no estado e de : %d", [typeNameEstablishmentsFromCity count]);
+    NSLog(@"Numero de estabelecimentos encontrados no estado e de : %d", [establishmentsFromCity count]);
     
     // Passa para o array auxiliar apenas as cidades do filtro de busca. (OBS: Inicialmente o array terá todas as cidades do estado.
-    self.localTypeEstablishmentsFromCity = [NSMutableArray arrayWithArray:typeNameEstablishmentsFromCity];
+    self.localEstablishmentsFromCity = [NSMutableArray arrayWithArray:establishmentsFromCity];
     
     [searchBar setDelegate:self];
     
@@ -41,9 +40,11 @@
                            green:116.0/255
                            blue:57.0/255
                            alpha:1];
-
     
 
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,7 +64,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [self.localTypeEstablishmentsFromCity count];
+    return [localEstablishmentsFromCity count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -73,33 +74,13 @@
     
     // Configure the cell...
     
-    AGLTypeEstablishment *establishment = [[AGLTypeEstablishment alloc]init];
-    establishment = [self.localTypeEstablishmentsFromCity objectAtIndex:indexPath.row];
-    cell.textLabel.text = establishment.typeNameEstablishment;
-        
+    AGLEstablishment *establishment = [[AGLEstablishment alloc]init];
+    establishment = [self.localEstablishmentsFromCity objectAtIndex:indexPath.row];
+    cell.textLabel.text = establishment.nameEstablishment;
+    
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSInteger typeName = indexPath.row;
-    AGLTypeEstablishment *type = [self.localTypeEstablishmentsFromCity objectAtIndex:typeName];
-        
-    self.chosenTypeEstablishmentForSegue = type;
-    
-    [self performSegueWithIdentifier:@"NomesEstabelecimento" sender:self ];
-    
-}
-
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"NomesEstabelecimento"]) {
-        AGLEstabelecimentosViewController *controller = segue.destinationViewController;
-        controller.typeEstablishment = self.chosenTypeEstablishmentForSegue;
-        controller.city = self.city;
-    }
-}
-
-#pragma mark - Search
 -(void) searchBarSearchButtonClicked:(UISearchBar *)aSearchBar{
     [searchBar resignFirstResponder];
 }
@@ -110,22 +91,41 @@
 -(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
     //NSLog(@"%d", [self.states count]);
     if ([searchText length] == 0) {
-        [self.localTypeEstablishmentsFromCity removeAllObjects];
-        [self.localTypeEstablishmentsFromCity addObjectsFromArray:self.typeNameEstablishmentsFromCity];
+        [self.localEstablishmentsFromCity removeAllObjects];
+        [self.localEstablishmentsFromCity addObjectsFromArray:self.establishmentsFromCity];
     }else{
-        [self.localTypeEstablishmentsFromCity removeAllObjects];
-        for (AGLTypeEstablishment *typeEstablishment in self.typeNameEstablishmentsFromCity) {
-            NSRange r = [typeEstablishment.typeNameEstablishment rangeOfString:searchText options:NSCaseInsensitiveSearch];
+        [self.localEstablishmentsFromCity removeAllObjects];
+        for (AGLEstablishment *establishment in self.establishmentsFromCity) {
+            NSRange r = [establishment.nameEstablishment rangeOfString:searchText options:NSCaseInsensitiveSearch];
             if(r.location != NSNotFound){
-                [self.localTypeEstablishmentsFromCity addObject:typeEstablishment];
+                [self.localEstablishmentsFromCity addObject:establishment];
             }
-        }
+        } 
     }
-    NSLog(@"Depois: %d", [self.localTypeEstablishmentsFromCity count]);
+    NSLog(@"Depois: %d", [self.localEstablishmentsFromCity count]);
     [self.tableView reloadData];
     
 }
 
+#pragma mark - Table view delegate
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger typeName = indexPath.row;
+    AGLEstablishment *establishment = [self.localEstablishmentsFromCity objectAtIndex:typeName];
+    
+    self.chosenEstablishmentForSegue = establishment;
+    
+    [self performSegueWithIdentifier:@"Endereco" sender:self ];
+    
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Endereco"]) {
+        AGLEstablishmentDetailsViewController *controller = segue.destinationViewController;
+        controller.establishment = self.chosenEstablishmentForSegue;
+    }
+}
 
 /*
 // Override to support conditional editing of the table view.
@@ -165,6 +165,7 @@
     return YES;
 }
 */
+
 
 
 @end

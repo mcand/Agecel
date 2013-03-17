@@ -13,6 +13,8 @@
 		8FE26B2916F2AD3F006E335E /* AGLEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */; };
 		8FE4696216D4686E00AD1462 /* AGLTypeEstablishmentDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */; };
 		8FE4696816DA935700AD1462 /* AGLTypeEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */; };
+		8FF0895916F5FC9B0066E7BB /* AGLEstabelecimentosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0895816F5FC9B0066E7BB /* AGLEstabelecimentosViewController.m */; };
+		8FF0896216F65EDC0066E7BB /* AGLEstablishmentDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FF0896116F65EDB0066E7BB /* AGLEstablishmentDetailsViewController.m */; };
 		D605D13316BE544E00381FC9 /* AGLTransacaoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */; };
 		D605D13616BE562500381FC9 /* AGLStateService.m in Sources */ = {isa = PBXBuildFile; fileRef = D605D13516BE562500381FC9 /* AGLStateService.m */; };
 		D60E8BE816AB8784006F3414 /* EstadoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D60E8BE716AB8784006F3414 /* EstadoCell.xib */; };
@@ -100,6 +102,10 @@
 		8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeEstablishmentDB.m; sourceTree = "<group>"; };
 		8FE4696616DA935700AD1462 /* AGLTypeEstablishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeEstablishment.h; sourceTree = "<group>"; };
 		8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeEstablishment.m; sourceTree = "<group>"; };
+		8FF0895716F5FC9B0066E7BB /* AGLEstabelecimentosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstabelecimentosViewController.h; sourceTree = "<group>"; };
+		8FF0895816F5FC9B0066E7BB /* AGLEstabelecimentosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstabelecimentosViewController.m; sourceTree = "<group>"; };
+		8FF0896016F65EDB0066E7BB /* AGLEstablishmentDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstablishmentDetailsViewController.h; sourceTree = "<group>"; };
+		8FF0896116F65EDB0066E7BB /* AGLEstablishmentDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstablishmentDetailsViewController.m; sourceTree = "<group>"; };
 		D605D13016BE53F100381FC9 /* AGLTransacao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AGLTransacao.h; sourceTree = "<group>"; };
 		D605D13116BE544E00381FC9 /* AGLTransacaoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTransacaoUtil.h; sourceTree = "<group>"; };
 		D605D13216BE544E00381FC9 /* AGLTransacaoUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTransacaoUtil.m; sourceTree = "<group>"; };
@@ -340,6 +346,10 @@
 				D6851F8E16B8C0640005C6A1 /* AGLEstadoViewController.m */,
 				D6E219FD16CEB4C4006F45DD /* AGLEstabelecimentosCidadeViewController.h */,
 				D6E219FE16CEB4C4006F45DD /* AGLEstabelecimentosCidadeViewController.m */,
+				8FF0895716F5FC9B0066E7BB /* AGLEstabelecimentosViewController.h */,
+				8FF0895816F5FC9B0066E7BB /* AGLEstabelecimentosViewController.m */,
+				8FF0896016F65EDB0066E7BB /* AGLEstablishmentDetailsViewController.h */,
+				8FF0896116F65EDB0066E7BB /* AGLEstablishmentDetailsViewController.m */,
 			);
 			name = List;
 			sourceTree = "<group>";
@@ -639,6 +649,8 @@
 				8F0B05A516F4B7EE0020727B /* AGLStateDB.m in Sources */,
 				8F0B05AB16F4BEAE0020727B /* AGLTypeEstablishmentService.m in Sources */,
 				8F0B05AE16F4C4B10020727B /* AGLEstablishmentService.m in Sources */,
+				8FF0895916F5FC9B0066E7BB /* AGLEstabelecimentosViewController.m in Sources */,
+				8FF0896216F65EDC0066E7BB /* AGLEstablishmentDetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

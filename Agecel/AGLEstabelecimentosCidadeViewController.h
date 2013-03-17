@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AGLTypeEstablishment.h"
 #import "AGLCity.h"
 
 @interface AGLEstabelecimentosCidadeViewController : UITableViewController <UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate, UISearchDisplayDelegate> {
@@ -19,7 +20,8 @@
 @property(nonatomic, strong) AGLCity *city;
 @property(nonatomic, strong) NSMutableArray *typeNameEstablishmentsFromCity;
 @property(strong, nonatomic) NSMutableArray *localTypeEstablishmentsFromCity;
-@property(strong, nonatomic) AGLCity *chosenStateForSegue;
+@property(strong, nonatomic) AGLTypeEstablishment *chosenTypeEstablishmentForSegue;
+
 @end
 
 

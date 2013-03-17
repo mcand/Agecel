@@ -22,11 +22,13 @@
 // Deleta todos os tipos estabelecimentos
 -(void) deleteEstablishments;
 
-// Retorna todos os tipos de estabelecimento de uma cidade
--(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city;
-
-// Retorna todos os tipos de nomes de um estabelecimentos de uma cidade
+// Retorna todos os tipos de nomes de um estabelecimentos de uma cidade e tipos
+-(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city withType:(AGLTypeEstablishment *)type;
+// retorna toodos o tipos de nomes de um estabelecimento a partir de uma cidade
 -(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *) city;
+
+//retorna o codigo de um estabelecimento
+-(bool) existEstablishmentWithCod:(NSInteger *)codEstablishment;
 
 
 @end

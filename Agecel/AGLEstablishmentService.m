@@ -14,16 +14,16 @@
 
 @implementation AGLEstablishmentService
 
-+(NSMutableArray *)getEstablishmentsFromCity:(AGLCity *)city{
++(NSMutableArray *)getEstablishmentsFromCity:(AGLCity *)city withType:(AGLTypeEstablishment *)type{
     NSMutableArray *typeNamesEstablishments = [[NSMutableArray alloc] init];
     AGLEstablishmentDB *db = [[AGLEstablishmentDB alloc]init];
     [db abrir:@"state"];
     if ([typeNamesEstablishments count]==0) {
         [self insertEstablishmentsOnDatabase];
-        typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city];
+        typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city withType:type];
     }
     
-    typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city];
+    typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city withType:type];
     return typeNamesEstablishments;
 }
 
@@ -39,33 +39,42 @@
 
 
 +(void)insertEstablishmentsOnDatabase {
-    [AGLTypeEstablishmentService insertTypeEstablishmentsOnDatabase];
     AGLEstablishmentDB *establishmentDB = [[AGLEstablishmentDB alloc]init];
     [establishmentDB abrir:@"state"];
     
     AGLEstablishment *establishment = [[AGLEstablishment  alloc]init];
-    establishment.idCity = 4;
-    establishment.idTypeEstablishment = 1;
-    establishment.nameEstablishment = @"Civi";
-    [establishmentDB saveEstablishment:establishment];
     
-    establishment = [[AGLEstablishment  alloc]init];
-    establishment.idCity = 4;
-    establishment.idTypeEstablishment = 1;
-    establishment.nameEstablishment = @"The Best";
-    [establishmentDB saveEstablishment:establishment];
+     if (![establishmentDB existEstablishmentWithCod:1]) {
+         [AGLTypeEstablishmentService insertTypeEstablishmentsOnDatabase];
+         establishment.idCity = 4;
+         establishment.idTypeEstablishment = 1;
+         establishment.nameEstablishment = @"Civi";
+         [establishmentDB saveEstablishment:establishment];
+     }
     
-    establishment = [[AGLEstablishment  alloc]init];
-    establishment.idCity = 4;
-    establishment.idTypeEstablishment = 2;
-    establishment.nameEstablishment = @"Albino";
-    [establishmentDB saveEstablishment:establishment];
+    if (![establishmentDB existEstablishmentWithCod:2]) {
+         establishment = [[AGLEstablishment  alloc]init];
+         establishment.idCity = 4;
+         establishment.idTypeEstablishment = 1;
+         establishment.nameEstablishment = @"The Best";
+         [establishmentDB saveEstablishment:establishment];
+    }
     
-    establishment = [[AGLEstablishment  alloc]init];
-    establishment.idCity = 4;
-    establishment.idTypeEstablishment = 2;
-    establishment.nameEstablishment = @"Angeloni";
+    if (![establishmentDB existEstablishmentWithCod:3]) {
+         establishment = [[AGLEstablishment  alloc]init];
+         establishment.idCity = 4;
+         establishment.idTypeEstablishment = 2;
+         establishment.nameEstablishment = @"Albino";
     [establishmentDB saveEstablishment:establishment];
+    }
+    
+    if (![establishmentDB existEstablishmentWithCod:4]) {
+         establishment = [[AGLEstablishment  alloc]init];
+         establishment.idCity = 4;
+         establishment.idTypeEstablishment = 2;
+         establishment.nameEstablishment = @"Angeloni";
+         [establishmentDB saveEstablishment:establishment];
+    }
     
            
     

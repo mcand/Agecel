@@ -62,7 +62,7 @@
   }
 }
 
-// Deleta a cidade
+// seleciona a cidade
 -(bool) selectAcity:(NSInteger *)city {
   int myInt = city;
   char *sql = "select * from city where id_city=?;";
