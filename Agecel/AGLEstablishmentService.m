@@ -1,0 +1,78 @@
+//
+//  AGLEstablishmentService.m
+//  Agecel
+//
+//  Created by Gilmar Araujo on 3/16/13.
+//  Copyright (c) 2013 Andre Furquim. All rights reserved.
+//
+
+#import "AGLEstablishmentService.h"
+#import "AGLEstablishmentDB.h"
+#import "AGLEstablishment.h"
+#import "AGLTypeEstablishmentService.h"
+#import "AGLTypeEstablishmentDB.h"
+
+@implementation AGLEstablishmentService
+
++(NSMutableArray *)getEstablishmentsFromCity:(AGLCity *)city{
+    NSMutableArray *typeNamesEstablishments = [[NSMutableArray alloc] init];
+    AGLEstablishmentDB *db = [[AGLEstablishmentDB alloc]init];
+    [db abrir:@"state"];
+    if ([typeNamesEstablishments count]==0) {
+        [self insertEstablishmentsOnDatabase];
+        typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city];
+    }
+    
+    typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city];
+    return typeNamesEstablishments;
+}
+
++(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *) city{
+    NSMutableArray *typeNamesEstablishments = [[NSMutableArray alloc] init];
+    AGLEstablishmentDB *db = [[AGLEstablishmentDB alloc]init];
+    [db abrir:@"state"];
+    [self insertEstablishmentsOnDatabase];
+    typeNamesEstablishments = [db getTypeNameEstablishmentsFromCity:city];
+    
+    return typeNamesEstablishments;
+}
+
+
++(void)insertEstablishmentsOnDatabase {
+    [AGLTypeEstablishmentService insertTypeEstablishmentsOnDatabase];
+    AGLEstablishmentDB *establishmentDB = [[AGLEstablishmentDB alloc]init];
+    [establishmentDB abrir:@"state"];
+    
+    AGLEstablishment *establishment = [[AGLEstablishment  alloc]init];
+    establishment.idCity = 4;
+    establishment.idTypeEstablishment = 1;
+    establishment.nameEstablishment = @"Civi";
+    [establishmentDB saveEstablishment:establishment];
+    
+    establishment = [[AGLEstablishment  alloc]init];
+    establishment.idCity = 4;
+    establishment.idTypeEstablishment = 1;
+    establishment.nameEstablishment = @"The Best";
+    [establishmentDB saveEstablishment:establishment];
+    
+    establishment = [[AGLEstablishment  alloc]init];
+    establishment.idCity = 4;
+    establishment.idTypeEstablishment = 2;
+    establishment.nameEstablishment = @"Albino";
+    [establishmentDB saveEstablishment:establishment];
+    
+    establishment = [[AGLEstablishment  alloc]init];
+    establishment.idCity = 4;
+    establishment.idTypeEstablishment = 2;
+    establishment.nameEstablishment = @"Angeloni";
+    [establishmentDB saveEstablishment:establishment];
+    
+           
+    
+    [establishmentDB fechar];
+    
+}
+
+
+
+@end

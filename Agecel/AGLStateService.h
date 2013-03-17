@@ -12,5 +12,7 @@
 
 // Pega todos os estados
 +(NSMutableArray *)getStates;
+
+// Insere alguns estados na base de dados
 +(void)insertStatesOnDatabase;
 @end

@@ -13,7 +13,7 @@
 
 // Retorna o SQL para criar um contato
 -(NSString *)getSQLCreate{
-  NSString *sql = @"create table if not exists contact (id_contact integer primary key autoincrement, foreign key(id_establishment) references establishment(id_establishment) on delete cascade, phone text, email text);";
+  NSString *sql = @"create table if not exists contact (id_contact integer primary key autoincrement, id_establishment integer, phone text, email text, foreign key(id_establishment) references establishment(id_establishment) on delete cascade);";
   return sql;
 }
 
@@ -40,7 +40,7 @@
     }
     sqlite3_finalize(stmt);
   }else{
-    NSLog(@"Erro ao inserir o contato");
+    NSLog(@"Erro ao inserir o contato!");
   }
 
 }
@@ -51,7 +51,7 @@
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if (resultado == SQLITE_DONE) {
-    NSLog(@"Tabela Contact deletada com sucesso!");
+    NSLog(@"Todos os dados da tabela contact foram deletados com sucesso!");
   }
   sqlite3_finalize(stmt);
 }

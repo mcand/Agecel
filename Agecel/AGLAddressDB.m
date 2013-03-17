@@ -12,7 +12,7 @@
 
 // Retorna o SQL para criar um endereco
 -(NSString *)getSQLCreate {
-  NSString *sql = @"create table if not exists address (id_address integer primary key autoincrement, foreign key(id_establishment) references establishment(id_establishment) on delete cascade, street text, zip text, complement text, number integer, neighborhood text);";
+  NSString *sql = @"create table if not exists address (id_address integer primary key autoincrement, id_establishment integer, street text, zip text, complement text, number integer, neighborhood text, foreign key(id_establishment) references establishment(id_establishment) on delete cascade);";
   return sql;
 }
 
@@ -38,11 +38,11 @@
     resultado = sqlite3_step(stmt);
     
     if (resultado == SQLITE_DONE) {
-      NSLog(@"Endereco inserido com sucesso");
+      NSLog(@"Endereco inserido com sucesso.");
     }
     sqlite3_finalize(stmt);
   }else{
-    NSLog(@"Erro ao inserir o endereco");
+    NSLog(@"Erro ao inserir o endereco!");
   }
 
 }
@@ -53,7 +53,7 @@
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if (resultado == SQLITE_DONE) {
-    NSLog(@"Tabela Address deletada com sucesso!");
+    NSLog(@"Dados da tabela address deletados com sucesso!");
   }
   sqlite3_finalize(stmt);
 }

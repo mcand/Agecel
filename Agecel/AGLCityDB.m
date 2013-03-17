@@ -36,17 +36,17 @@
       resultado = sqlite3_step(stmt);
       
       if (resultado == SQLITE_DONE){
-        NSLog(@"Cidade inserido com sucesso");
+        NSLog(@"Cidade %@ inserida com sucesso.", city.nameCity);
       }
       sqlite3_finalize(stmt);
     } else {
-      NSLog(@"Erro ao inserir a cidade");
+      NSLog(@"Erro ao inserir a cidade %@!", city.nameCity);
       return;
     }
   
 }
 
-// Deleta a cidade
+// Deleta uma cidade
 -(void) deleteAcity:(AGLCity *)city {
   char *sql = "delete from city where id_state=?;";
   sqlite3_stmt *stmt;
@@ -56,7 +56,7 @@
     sqlite3_bind_int(stmt, 1, city.idCity);
     resultado = sqlite3_step(stmt);
     if (resultado == SQLITE_DONE) {
-      NSLog(@"Cidade delatada com sucesso!");
+      NSLog(@"Cidade %@ delatada com sucesso!", city.nameCity);
     }
     sqlite3_finalize(stmt);
   }
@@ -85,7 +85,7 @@
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if (resultado == SQLITE_DONE) {
-    NSLog(@"Deletado com sucesso!");
+    NSLog(@"Todas as cidades de city foram deletadas!");
   }
   sqlite3_finalize(stmt);
 }

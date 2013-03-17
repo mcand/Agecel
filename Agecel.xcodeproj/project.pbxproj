@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8F0B05A516F4B7EE0020727B /* AGLStateDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B05A416F4B7EE0020727B /* AGLStateDB.m */; };
+		8F0B05AB16F4BEAE0020727B /* AGLTypeEstablishmentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B05AA16F4BEAE0020727B /* AGLTypeEstablishmentService.m */; };
+		8F0B05AE16F4C4B10020727B /* AGLEstablishmentService.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F0B05AD16F4C4B10020727B /* AGLEstablishmentService.m */; };
 		8FE26B2916F2AD3F006E335E /* AGLEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */; };
 		8FE4696216D4686E00AD1462 /* AGLTypeEstablishmentDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */; };
 		8FE4696816DA935700AD1462 /* AGLTypeEstablishment.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */; };
@@ -26,7 +29,6 @@
 		D62A7AA716A8D77D0087838C /* icon-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D62A7AA516A8D77D0087838C /* icon-iPhone@2x.png */; };
 		D62A7C2716AA0CAD0087838C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D62A7C2616AA0CAD0087838C /* Utils.m */; };
 		D63AF9E216BCF6B200CAABE6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D6C5B3F3168512C00071CFD3 /* libsqlite3.dylib */; };
-		D63AF9E616BCF75300CAABE6 /* StateDB.m in Sources */ = {isa = PBXBuildFile; fileRef = D63AF9E516BCF75300CAABE6 /* StateDB.m */; };
 		D63AF9E916BCF89E00CAABE6 /* AGLSQLiteHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */; };
 		D64CB3CF16B220760030F016 /* alagoas.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3BA16B220760030F016 /* alagoas.png */; };
 		D64CB3D016B220760030F016 /* amapa.png in Resources */ = {isa = PBXBuildFile; fileRef = D64CB3BB16B220760030F016 /* amapa.png */; };
@@ -86,6 +88,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8F0B05A316F4B7EE0020727B /* AGLStateDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLStateDB.h; sourceTree = "<group>"; };
+		8F0B05A416F4B7EE0020727B /* AGLStateDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLStateDB.m; sourceTree = "<group>"; };
+		8F0B05A916F4BEAE0020727B /* AGLTypeEstablishmentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeEstablishmentService.h; sourceTree = "<group>"; };
+		8F0B05AA16F4BEAE0020727B /* AGLTypeEstablishmentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLTypeEstablishmentService.m; sourceTree = "<group>"; };
+		8F0B05AC16F4C4B00020727B /* AGLEstablishmentService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstablishmentService.h; sourceTree = "<group>"; };
+		8F0B05AD16F4C4B10020727B /* AGLEstablishmentService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstablishmentService.m; sourceTree = "<group>"; };
 		8FE26B2716F2AD3F006E335E /* AGLEstablishment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLEstablishment.h; sourceTree = "<group>"; };
 		8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLEstablishment.m; sourceTree = "<group>"; };
 		8FE4696016D4686E00AD1462 /* AGLTypeEstablishmentDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLTypeEstablishmentDB.h; sourceTree = "<group>"; };
@@ -112,8 +120,6 @@
 		D62A7AA516A8D77D0087838C /* icon-iPhone@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-iPhone@2x.png"; sourceTree = "<group>"; };
 		D62A7C2516AA0CAD0087838C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		D62A7C2616AA0CAD0087838C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
-		D63AF9E416BCF75300CAABE6 /* StateDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StateDB.h; sourceTree = "<group>"; };
-		D63AF9E516BCF75300CAABE6 /* StateDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StateDB.m; sourceTree = "<group>"; };
 		D63AF9E716BCF89E00CAABE6 /* AGLSQLiteHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AGLSQLiteHelper.h; sourceTree = "<group>"; };
 		D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AGLSQLiteHelper.m; sourceTree = "<group>"; };
 		D64CB3BA16B220760030F016 /* alagoas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = alagoas.png; sourceTree = "<group>"; };
@@ -211,6 +217,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F0B05A216F4B7130020727B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D66F73A9168647F00060FECE /* AGLState.h */,
+				D66F73AA168647F00060FECE /* AGLState.m */,
+				D6FFFFBE16C53383007CF2D9 /* AGLCity.h */,
+				D6FFFFBF16C53383007CF2D9 /* AGLCity.m */,
+				8FE26B2716F2AD3F006E335E /* AGLEstablishment.h */,
+				8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */,
+				D6628B1816F3EE720063ED24 /* AGLContact.h */,
+				D6628B1916F3EE730063ED24 /* AGLContact.m */,
+				D6628B1B16F3EF750063ED24 /* AGLAddress.h */,
+				D6628B1C16F3EF750063ED24 /* AGLAddress.m */,
+				8FE4696616DA935700AD1462 /* AGLTypeEstablishment.h */,
+				8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8F0B05A616F4B86F0020727B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D62A7C2016AA0BF20087838C /* Search */,
+				D62A7C2116AA0BFA0087838C /* List */,
+				D62A7C2216AA0C060087838C /* About */,
+				D62A7C2316AA0C0E0087838C /* Settings */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8F0B05A816F4BE6E0020727B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D605D13416BE562500381FC9 /* AGLStateService.h */,
+				D605D13516BE562500381FC9 /* AGLStateService.m */,
+				D6FFFFC116C56C98007CF2D9 /* AGLCitiesService.h */,
+				D6FFFFC216C56C98007CF2D9 /* AGLCitiesService.m */,
+				8F0B05A916F4BEAE0020727B /* AGLTypeEstablishmentService.h */,
+				8F0B05AA16F4BEAE0020727B /* AGLTypeEstablishmentService.m */,
+				8F0B05AC16F4C4B00020727B /* AGLEstablishmentService.h */,
+				8F0B05AD16F4C4B10020727B /* AGLEstablishmentService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		D62A7A5E16A86D8E0087838C /* Icon-Tabs */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,13 +294,10 @@
 		D62A7C1D16AA0B7D0087838C /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8F0B05A616F4B86F0020727B /* Controller */,
+				8F0B05A216F4B7130020727B /* Model */,
 				D63AF9E316BCF73000CAABE6 /* Database */,
-				D64CB40116B233A60030F016 /* Navigation  */,
 				D62A7C2416AA0C8E0087838C /* Utils */,
-				D62A7C2316AA0C0E0087838C /* Settings */,
-				D62A7C2216AA0C060087838C /* About */,
-				D62A7C2116AA0BFA0087838C /* List */,
-				D62A7C2016AA0BF20087838C /* Search */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -280,6 +328,7 @@
 		D62A7C2116AA0BFA0087838C /* List */ = {
 			isa = PBXGroup;
 			children = (
+				8F0B05A816F4BE6E0020727B /* Service */,
 				D679AF8E16A0EB10005F3151 /* AGLGeralListViewController.h */,
 				D679AF8F16A0EB10005F3151 /* AGLGeralListViewController.m */,
 				D6C5B3DB1684E7F20071CFD3 /* AGLListViewController.h */,
@@ -289,10 +338,6 @@
 				D60E8BEB16AB8B3F006F3414 /* EstadoCell.m */,
 				D6851F8D16B8C0640005C6A1 /* AGLEstadoViewController.h */,
 				D6851F8E16B8C0640005C6A1 /* AGLEstadoViewController.m */,
-				D605D13416BE562500381FC9 /* AGLStateService.h */,
-				D605D13516BE562500381FC9 /* AGLStateService.m */,
-				D6FFFFC116C56C98007CF2D9 /* AGLCitiesService.h */,
-				D6FFFFC216C56C98007CF2D9 /* AGLCitiesService.m */,
 				D6E219FD16CEB4C4006F45DD /* AGLEstabelecimentosCidadeViewController.h */,
 				D6E219FE16CEB4C4006F45DD /* AGLEstabelecimentosCidadeViewController.m */,
 			);
@@ -320,6 +365,9 @@
 		D62A7C2416AA0C8E0087838C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D64CB40116B233A60030F016 /* Navigation  */,
+				D63AF9E716BCF89E00CAABE6 /* AGLSQLiteHelper.h */,
+				D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */,
 				D62A7C2516AA0CAD0087838C /* Utils.h */,
 				D62A7C2616AA0CAD0087838C /* Utils.m */,
 				D605D13016BE53F100381FC9 /* AGLTransacao.h */,
@@ -332,28 +380,14 @@
 		D63AF9E316BCF73000CAABE6 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				D63AF9E416BCF75300CAABE6 /* StateDB.h */,
-				D63AF9E516BCF75300CAABE6 /* StateDB.m */,
-				D66F73A9168647F00060FECE /* AGLState.h */,
-				D66F73AA168647F00060FECE /* AGLState.m */,
-				D63AF9E716BCF89E00CAABE6 /* AGLSQLiteHelper.h */,
-				D63AF9E816BCF89E00CAABE6 /* AGLSQLiteHelper.m */,
+				8F0B05A316F4B7EE0020727B /* AGLStateDB.h */,
+				8F0B05A416F4B7EE0020727B /* AGLStateDB.m */,
 				D6FFFFBB16C44D0B007CF2D9 /* AGLCityDB.h */,
 				D6FFFFBC16C44D0C007CF2D9 /* AGLCityDB.m */,
-				D6FFFFBE16C53383007CF2D9 /* AGLCity.h */,
-				D6FFFFBF16C53383007CF2D9 /* AGLCity.m */,
-				8FE26B2716F2AD3F006E335E /* AGLEstablishment.h */,
-				8FE26B2816F2AD3F006E335E /* AGLEstablishment.m */,
 				8FE4696016D4686E00AD1462 /* AGLTypeEstablishmentDB.h */,
 				8FE4696116D4686E00AD1462 /* AGLTypeEstablishmentDB.m */,
-				8FE4696616DA935700AD1462 /* AGLTypeEstablishment.h */,
-				8FE4696716DA935700AD1462 /* AGLTypeEstablishment.m */,
 				D6628B1516F3E4440063ED24 /* AGLEstablishmentDB.h */,
 				D6628B1616F3E4440063ED24 /* AGLEstablishmentDB.m */,
-				D6628B1816F3EE720063ED24 /* AGLContact.h */,
-				D6628B1916F3EE730063ED24 /* AGLContact.m */,
-				D6628B1B16F3EF750063ED24 /* AGLAddress.h */,
-				D6628B1C16F3EF750063ED24 /* AGLAddress.m */,
 				D6628B1E16F3F15A0063ED24 /* AGLContactDB.h */,
 				D6628B1F16F3F15A0063ED24 /* AGLContactDB.m */,
 				D6628B2116F3F9520063ED24 /* AGLAddressDB.h */,
@@ -587,7 +621,6 @@
 				D64CB40416B233F20030F016 /* AGLMyTabBarController.m in Sources */,
 				D64CB40A16B2371F0030F016 /* AGLMyNavigationController.m in Sources */,
 				D6851F8F16B8C0640005C6A1 /* AGLEstadoViewController.m in Sources */,
-				D63AF9E616BCF75300CAABE6 /* StateDB.m in Sources */,
 				D63AF9E916BCF89E00CAABE6 /* AGLSQLiteHelper.m in Sources */,
 				D605D13316BE544E00381FC9 /* AGLTransacaoUtil.m in Sources */,
 				D605D13616BE562500381FC9 /* AGLStateService.m in Sources */,
@@ -603,6 +636,9 @@
 				D6628B1D16F3EF750063ED24 /* AGLAddress.m in Sources */,
 				D6628B2016F3F15B0063ED24 /* AGLContactDB.m in Sources */,
 				D6628B2316F3F9530063ED24 /* AGLAddressDB.m in Sources */,
+				8F0B05A516F4B7EE0020727B /* AGLStateDB.m in Sources */,
+				8F0B05AB16F4BEAE0020727B /* AGLTypeEstablishmentService.m in Sources */,
+				8F0B05AE16F4C4B10020727B /* AGLEstablishmentService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

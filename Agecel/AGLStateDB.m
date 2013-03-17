@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Andre Furquim. All rights reserved.
 //
 
-#import "StateDB.h"
+#import "AGLStateDB.h"
 #import "AGLState.h"
 
 @implementation StateDB
@@ -37,15 +37,15 @@
     resultado = sqlite3_step(stmt);
     
     if (resultado == SQLITE_DONE){
-      NSLog(@"Estado inserido com sucesso");
+      NSLog(@"Estado %@ inserido com sucesso.", state.stateName);
     }
     sqlite3_finalize(stmt);
   } else {
-    NSLog(@"Erro ao inserir o estado");
+    NSLog(@"Erro ao inserir o estado %@!", state.stateName);
     return;
   }
 }
-// Deleta o carro
+// Deleta o estado
 -(void) deleteAstate:(AGLState *)state {
   char *sql = "delete from state where id_state=?;";
   sqlite3_stmt *stmt;
@@ -55,7 +55,7 @@
     sqlite3_bind_int(stmt, 1, state.id_state);
     resultado = sqlite3_step(stmt);
     if (resultado == SQLITE_DONE) {
-      NSLog(@"Deletado com suceso!");
+      NSLog(@"Estado %@ com sucesso.", state.stateName);
     }
     sqlite3_finalize(stmt);
   }
@@ -66,7 +66,7 @@
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if (resultado == SQLITE_DONE) {
-    NSLog(@"Deletado com sucesso!");
+    NSLog(@"Estados da tabela state deletados com sucesso!");
   }
   sqlite3_finalize(stmt);
 }

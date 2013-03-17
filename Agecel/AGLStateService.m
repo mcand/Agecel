@@ -8,7 +8,7 @@
 
 #import "AGLStateService.h"
 #import "AGLState.h"
-#import "StateDB.h"
+#import "AGLStateDB.h"
 @implementation AGLStateService
 
 +(NSMutableArray *)getStates {

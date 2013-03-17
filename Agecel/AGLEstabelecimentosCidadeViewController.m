@@ -7,19 +7,41 @@
 //
 
 #import "AGLEstabelecimentosCidadeViewController.h"
+#import "AGLEstablishmentService.h"
+#import "AGLEstablishment.h"
+#import "AGLTypeEstablishment.h"
 
 @interface AGLEstabelecimentosCidadeViewController ()
 
 @end
 
 @implementation AGLEstabelecimentosCidadeViewController
-@synthesize city;
+@synthesize city, typeNameEstablishmentsFromCity, localTypeEstablishmentsFromCity;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
   
     self.title = [NSString stringWithFormat:@"%@", self.city.nameCity];
+    
+    // Pega todos os tipo de estabelecimentos de uma cidade
+    self.typeNameEstablishmentsFromCity = [[NSMutableArray alloc] initWithArray:[AGLEstablishmentService getTypeNameEstablishmentsFromCity:self.city]];
+    
+    
+    NSLog(@"Numero de cidades encontradas no estado e de : %d", [typeNameEstablishmentsFromCity count]);
+    
+    // Passa para o array auxiliar apenas as cidades do filtro de busca. (OBS: Inicialmente o array terá todas as cidades do estado.
+    self.localTypeEstablishmentsFromCity = [NSMutableArray arrayWithArray:typeNameEstablishmentsFromCity];
+    
+    [searchBar setDelegate:self];
+    
+    searchBar.tintColor = [UIColor
+                           colorWithRed:0.0/255
+                           green:116.0/255
+                           blue:57.0/255
+                           alpha:1];
+
+    
 
 }
 
@@ -40,7 +62,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return 1;
+    return [self.localTypeEstablishmentsFromCity count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -50,8 +72,54 @@
     
     // Configure the cell...
     
+    AGLTypeEstablishment *establishment = [[AGLTypeEstablishment alloc]init];
+    establishment = [self.localTypeEstablishmentsFromCity objectAtIndex:indexPath.row];
+    cell.textLabel.text = establishment.typeNameEstablishment;
+        
     return cell;
 }
+
+-(void) searchBarSearchButtonClicked:(UISearchBar *)aSearchBar{
+    [searchBar resignFirstResponder];
+}
+
+/*-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"Estabelecimento"]) {
+        AGLEstabelecimentosCidadeViewController *controller = segue.destinationViewController;
+        controller.city = self.chosenStateForSegue;
+    }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSInteger cidade = indexPath.row;
+    AGLCity *cid = [self.localCities objectAtIndex:cidade];
+    self.chosenStateForSegue = cid;
+    
+    [self performSegueWithIdentifier:@"Estabelecimento" sender:self ];
+    
+}*/
+
+//faz a busca sem ser case sensitive
+-(void) searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
+    //NSLog(@"%d", [self.states count]);
+    if ([searchText length] == 0) {
+        [self.localTypeEstablishmentsFromCity removeAllObjects];
+        [self.localTypeEstablishmentsFromCity addObjectsFromArray:self.typeNameEstablishmentsFromCity];
+    }else{
+        [self.localTypeEstablishmentsFromCity removeAllObjects];
+        for (AGLTypeEstablishment *typeEstablishment in self.typeNameEstablishmentsFromCity) {
+            NSRange r = [typeEstablishment.typeNameEstablishment rangeOfString:searchText options:NSCaseInsensitiveSearch];
+            if(r.location != NSNotFound){
+                [self.localTypeEstablishmentsFromCity addObject:typeEstablishment];
+            }
+        }
+    }
+    NSLog(@"Depois: %d", [self.localTypeEstablishmentsFromCity count]);
+    [self.tableView reloadData];
+    
+}
+
 
 /*
 // Override to support conditional editing of the table view.

@@ -9,6 +9,7 @@
 #import "AGLSQLiteHelper.h"
 #import "AGLEstablishment.h"
 #import "AGLCity.h"
+#import "AGLTypeEstablishment.h"
 
 @interface AGLEstablishmentDB : AGLSQLiteHelper
 
@@ -23,6 +24,9 @@
 
 // Retorna todos os tipos de estabelecimento de uma cidade
 -(NSMutableArray *) getTypeEstablishmentsFromCity:(AGLCity *)city;
+
+// Retorna todos os tipos de nomes de um estabelecimentos de uma cidade
+-(NSMutableArray *) getTypeNameEstablishmentsFromCity:(AGLCity *) city;
 
 
 @end
