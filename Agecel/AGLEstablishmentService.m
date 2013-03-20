@@ -24,6 +24,7 @@
     }
     
     typeNamesEstablishments = [db getTypeEstablishmentsFromCity:city withType:type];
+    [db fechar];
     return typeNamesEstablishments;
 }
 
@@ -33,7 +34,7 @@
     [db abrir:@"state"];
     [self insertEstablishmentsOnDatabase];
     typeNamesEstablishments = [db getTypeNameEstablishmentsFromCity:city];
-    
+    [db fechar];
     return typeNamesEstablishments;
 }
 
@@ -77,9 +78,7 @@
     }
     
            
-    
     [establishmentDB fechar];
-    
 }
 
 

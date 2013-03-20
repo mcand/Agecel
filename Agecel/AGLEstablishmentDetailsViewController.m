@@ -7,20 +7,35 @@
 //
 
 #import "AGLEstablishmentDetailsViewController.h"
+#import "AGLAddressService.h"
+#import "AGLAddress.h"
 
 @interface AGLEstablishmentDetailsViewController ()
 
 @end
 
 @implementation AGLEstablishmentDetailsViewController
-@synthesize establishment;
+@synthesize establishment, addressesFromEstrablishment;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     self.title = [NSString stringWithFormat:@"%@", establishment.nameEstablishment];
 
-	// Do any additional setup after loading the view.
+    // Pega todos os enderecos de um estabelecimento
+    self.addressesFromEstrablishment = [[NSMutableArray alloc] initWithArray:[AGLAddressService getAddressesFromEstablishment:self.establishment]];
+  
+  
+    NSLog(@"Numero de endereços encontrados e de : %d", [addressesFromEstrablishment count]);
+  
+    AGLAddress *address = [[AGLAddress alloc] init];
+    address = [addressesFromEstrablishment objectAtIndex:0]; // só pegando um endereço # PODE HAVER MAIS DE UM, ASSIM E PRECISO TRATAR
+    street.text = address.street;
+    number.text = [NSString stringWithFormat:@"%d", address.number];
+    complement.text = address.complement;
+    zip.text = address.zip;
+    neighborhood.text = address.neighborhood;
+
 }
 
 - (void)didReceiveMemoryWarning

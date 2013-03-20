@@ -259,11 +259,11 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="rha-84-1wu" detailTextLabel="Rbt-ij-OZ2" imageView="FgL-ta-5n7" style="IBUITableViewCellStyleValue1" id="dC4-NE-qSS">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="rha-84-1wu" detailTextLabel="Rbt-ij-OZ2" imageView="FgL-ta-5n7" style="IBUITableViewCellStyleValue1" id="dC4-NE-qSS">
                                 <rect key="frame" x="0.0" y="66" width="320" height="48"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="47"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="47"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rha-84-1wu">
@@ -385,11 +385,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qDR-nS-kDm" style="IBUITableViewCellStyleDefault" id="ZrW-BY-7w0">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="qDR-nS-kDm" style="IBUITableViewCellStyleDefault" id="ZrW-BY-7w0">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Academia" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDR-nS-kDm">
@@ -433,11 +433,11 @@
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="bgj-3z-uTf" style="IBUITableViewCellStyleDefault" id="ZDZ-bc-Hke">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="bgj-3z-uTf" style="IBUITableViewCellStyleDefault" id="ZDZ-bc-Hke">
                                 <rect key="frame" x="0.0" y="66" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Civi" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgj-3z-uTf">
@@ -475,22 +475,68 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="367"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-vp-ehF">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rua:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Roh-vp-ehF">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="oFf-Bq-Gmt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Cep:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-RC-Jhb">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Complemento:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-gv-pnj">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="0FM-UP-ngo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Número:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLX-pw-JyM">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="IFI-Eu-z7Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bairro:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GOZ-8V-aUX">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="58" id="Q4U-Z3-NvQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Rua Paulo Malschitzki" translatesAutoresizingMaskIntoConstraints="NO" id="sas-ci-pJ5">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="183" id="5yC-Gp-DvL"/>
+                                    <constraint firstAttribute="height" constant="106" id="r1q-iO-YNj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="90" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BGF-OD-abA">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kVf-RC-Jhb">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="apt. 504" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="grz-uF-jmG">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-gv-pnj">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="89219710" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jjk-l3-Y0o">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLX-pw-JyM">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Bom Retiro" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LjD-BJ-eX8">
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -498,17 +544,37 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Bl9-gv-pnj" secondAttribute="bottom" constant="114" id="5u8-10-Gzk"/>
-                            <constraint firstItem="Roh-vp-ehF" firstAttribute="top" secondItem="I0T-QD-IDA" secondAttribute="top" constant="153" id="CSc-L4-Ady"/>
-                            <constraint firstItem="xLX-pw-JyM" firstAttribute="leading" secondItem="Bl9-gv-pnj" secondAttribute="leading" type="default" id="EGa-6V-WoY"/>
-                            <constraint firstItem="Roh-vp-ehF" firstAttribute="leading" secondItem="I0T-QD-IDA" secondAttribute="leading" constant="56" id="H3d-Oa-Uf0"/>
-                            <constraint firstAttribute="bottom" secondItem="xLX-pw-JyM" secondAttribute="bottom" constant="74" id="JOG-cs-OA3"/>
-                            <constraint firstAttribute="bottom" secondItem="kVf-RC-Jhb" secondAttribute="bottom" constant="156" id="RrK-SR-cbh"/>
-                            <constraint firstItem="kVf-RC-Jhb" firstAttribute="leading" secondItem="Roh-vp-ehF" secondAttribute="leading" type="default" id="qhS-vl-ro2"/>
-                            <constraint firstItem="Bl9-gv-pnj" firstAttribute="leading" secondItem="kVf-RC-Jhb" secondAttribute="leading" type="default" id="yyW-pd-MdZ"/>
+                            <constraint firstItem="Roh-vp-ehF" firstAttribute="top" secondItem="I0T-QD-IDA" secondAttribute="top" constant="64" id="07M-EH-lV7"/>
+                            <constraint firstItem="grz-uF-jmG" firstAttribute="leading" secondItem="Bl9-gv-pnj" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="0bz-DO-Pub"/>
+                            <constraint firstItem="jjk-l3-Y0o" firstAttribute="trailing" secondItem="Bl9-gv-pnj" secondAttribute="trailing" type="default" id="4Ll-T6-aHh"/>
+                            <constraint firstItem="sas-ci-pJ5" firstAttribute="top" secondItem="I0T-QD-IDA" secondAttribute="top" constant="59" id="891-si-XSy"/>
+                            <constraint firstItem="xLX-pw-JyM" firstAttribute="top" secondItem="I0T-QD-IDA" secondAttribute="top" constant="166" id="9qE-a1-KHN"/>
+                            <constraint firstItem="LjD-BJ-eX8" firstAttribute="baseline" secondItem="GOZ-8V-aUX" secondAttribute="baseline" type="default" id="EC4-oQ-2ls"/>
+                            <constraint firstItem="sas-ci-pJ5" firstAttribute="centerX" secondItem="I0T-QD-IDA" secondAttribute="centerX" type="default" id="MjJ-mo-Quy"/>
+                            <constraint firstItem="LjD-BJ-eX8" firstAttribute="centerX" secondItem="BGF-OD-abA" secondAttribute="centerX" type="default" id="QGx-Ss-4Pt"/>
+                            <constraint firstItem="Bl9-gv-pnj" firstAttribute="top" secondItem="xLX-pw-JyM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Uxo-Z4-V0K"/>
+                            <constraint firstItem="LjD-BJ-eX8" firstAttribute="leading" secondItem="I0T-QD-IDA" secondAttribute="leading" constant="89" id="YFF-rP-qYK"/>
+                            <constraint firstItem="kVf-RC-Jhb" firstAttribute="leading" secondItem="GOZ-8V-aUX" secondAttribute="leading" type="default" id="YpN-HT-ZfS"/>
+                            <constraint firstItem="Roh-vp-ehF" firstAttribute="leading" secondItem="xLX-pw-JyM" secondAttribute="leading" type="default" id="Zdo-ob-yIt"/>
+                            <constraint firstItem="GOZ-8V-aUX" firstAttribute="top" secondItem="kVf-RC-Jhb" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="e0t-B6-lX6"/>
+                            <constraint firstItem="jjk-l3-Y0o" firstAttribute="baseline" secondItem="kVf-RC-Jhb" secondAttribute="baseline" type="default" id="gE1-dN-SOE"/>
+                            <constraint firstItem="kVf-RC-Jhb" firstAttribute="trailing" secondItem="Roh-vp-ehF" secondAttribute="trailing" type="default" id="gWC-5K-ypC"/>
+                            <constraint firstItem="jjk-l3-Y0o" firstAttribute="leading" secondItem="I0T-QD-IDA" secondAttribute="leading" constant="74" id="j0T-R3-R60"/>
+                            <constraint firstItem="Bl9-gv-pnj" firstAttribute="leading" secondItem="xLX-pw-JyM" secondAttribute="leading" type="default" id="kbC-uZ-bIq"/>
+                            <constraint firstItem="grz-uF-jmG" firstAttribute="baseline" secondItem="Bl9-gv-pnj" secondAttribute="baseline" type="default" id="tPa-JM-Zp0"/>
+                            <constraint firstItem="kVf-RC-Jhb" firstAttribute="top" secondItem="Bl9-gv-pnj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="tXX-Z0-HrM"/>
+                            <constraint firstItem="kVf-RC-Jhb" firstAttribute="leading" secondItem="Bl9-gv-pnj" secondAttribute="leading" type="default" id="uea-0I-CYH"/>
+                            <constraint firstItem="BGF-OD-abA" firstAttribute="baseline" secondItem="xLX-pw-JyM" secondAttribute="baseline" type="default" id="ura-Cz-mu0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fAa-nU-VKq"/>
+                    <connections>
+                        <outlet property="complement" destination="grz-uF-jmG" id="mNq-rI-xBa"/>
+                        <outlet property="neighborhood" destination="LjD-BJ-eX8" id="rQz-p3-PUU"/>
+                        <outlet property="number" destination="BGF-OD-abA" id="6lc-aB-I5Q"/>
+                        <outlet property="street" destination="sas-ci-pJ5" id="rQL-kA-ef8"/>
+                        <outlet property="zip" destination="jjk-l3-Y0o" id="ilZ-Ao-QhO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ExS-ud-M9q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -590,6 +656,13 @@
         </class>
         <class className="AGLEstablishmentDetailsViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLEstablishmentDetailsViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="complement" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="neighborhood" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="number" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="street" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="zip" candidateClass="UILabel"/>
+            </relationships>
         </class>
         <class className="AGLEstadoViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AGLEstadoViewController.h"/>

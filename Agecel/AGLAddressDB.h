@@ -24,4 +24,7 @@
 // Retorna todos os enderecos de um estabelecimento
 -(NSMutableArray *) getAddressesFromEstablishment:(AGLEstablishment *)establishment;
 
+// Verifica se existe no banco um endereco a partir de seu código
+-(bool) existAddressWithCod:(NSInteger *)codAddress;
+
 @end

@@ -98,4 +98,21 @@
   return addresses;
 }
 
+// verifica se existe um endereco a partir de seu codigo
+-(bool) existAddressWithCod:(NSInteger *)codAddress {
+  char *sql = "select id_address from address where id_address = ?;";
+  sqlite3_stmt *stmt;
+  int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
+  if (resultado == SQLITE_OK) {
+    // informa o id
+    sqlite3_bind_int(stmt, 1, codAddress);
+    if (sqlite3_step(stmt) == SQLITE_ROW) {
+      return true;
+    }
+    sqlite3_finalize(stmt);
+  }
+  return false;
+}
+
+
 @end

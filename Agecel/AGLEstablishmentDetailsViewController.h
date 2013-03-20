@@ -10,9 +10,17 @@
 #import "AGLEstablishment.h"            
 
 @interface AGLEstablishmentDetailsViewController : UIViewController{
-    AGLEstablishment *establishment;
+  AGLEstablishment *establishment;
+  NSMutableArray *addressesFromEstrablishment;
+  IBOutlet UITextView *street;
+  IBOutlet UILabel *number;
+  IBOutlet UILabel *complement;
+  IBOutlet UILabel *zip;
+  IBOutlet UILabel *neighborhood;
 }
 
 @property (nonatomic, strong) AGLEstablishment *establishment;
+@property (nonatomic, strong) NSMutableArray *addressesFromEstrablishment;
+
 
 @end
