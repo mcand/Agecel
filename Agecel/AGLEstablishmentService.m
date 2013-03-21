@@ -52,7 +52,7 @@
          establishment.nameEstablishment = @"Civi";
          [establishmentDB saveEstablishment:establishment];
      }
-    
+  
     if (![establishmentDB existEstablishmentWithCod:2]) {
          establishment = [[AGLEstablishment  alloc]init];
          establishment.idCity = 4;

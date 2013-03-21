@@ -16,10 +16,10 @@
 +(NSMutableArray *)getAddressesFromEstablishment:(AGLEstablishment *)establishment{
   NSMutableArray *addressesFromEstablishment = [[NSMutableArray alloc] init];
   AGLAddressDB *db = [[AGLAddressDB alloc]init];
+  [db abrir:@"state"];
   if ([addressesFromEstablishment count]==0) {
     [self insertAddressesOnDatabase];
   }
-  [db abrir:@"state"];
   addressesFromEstablishment = [db getAddressesFromEstablishment:establishment];
   [db fechar];
   return addressesFromEstablishment;
@@ -87,7 +87,6 @@
     
     [addressDB saveAddress:address];
   }
-  
   
   [addressDB fechar];
 }

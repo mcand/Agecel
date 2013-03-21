@@ -41,9 +41,6 @@
                            green:116.0/255
                            blue:57.0/255
                            alpha:1];
-
-    
-
 }
 
 - (void)didReceiveMemoryWarning

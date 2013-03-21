@@ -120,7 +120,8 @@
         // informa o id
         sqlite3_bind_int(stmt, 1, codEstablishment);
         if (sqlite3_step(stmt) == SQLITE_ROW) {
-            return true;
+          sqlite3_finalize(stmt);
+          return true;
         }
         sqlite3_finalize(stmt);
     }

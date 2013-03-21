@@ -107,6 +107,7 @@
       city.idState = sqlite3_column_int(stmt, 2);
       [cities addObject:city];
     }
+    sqlite3_finalize(stmt);
   }
   return cities;
 }

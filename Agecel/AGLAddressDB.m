@@ -18,7 +18,7 @@
 
 // Salva um novo endereco ou atualiza um já existe pelo id
 -(void) saveAddress:(AGLAddress *)address {
-  char *sql = "insert or replace into contact (id_address, id_establishment, street, zip, complement, number, neighborhood) values (?, ?, ?, ?, ?, ?, ?);";
+  char *sql = "insert or replace into address (id_address, id_establishment, street, zip, complement, number, neighborhood) values (?, ?, ?, ?, ?, ?, ?);";
   sqlite3_stmt *stmt;
   int resultado = sqlite3_prepare_v2(bancoDeDados, sql, -1, &stmt, nil);
   if(resultado == SQLITE_OK){

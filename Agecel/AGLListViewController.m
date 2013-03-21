@@ -60,28 +60,10 @@
   
 }
 
-
-
-
-
-
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
-/*-
- (void)tableView:(UITableView *)tableView
-commitEditingStyle:(UITableViewCellEditingStyle)editingStyle
-forRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (editingStyle == UITableViewCellEditingStyleDelete) {
-    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath]
-                     withRowAnimation:UITableViewRowAnimationFade];
-  } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-  }
-}
- */
 
 @end
