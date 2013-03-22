@@ -5,7 +5,7 @@
 //  Created by Andre Furquim on 12/21/12.
 //  Copyright (c) 2012 Andre Furquim. All rights reserved.
 //
-// Teste
+// 
 
 #import "AGLSearchViewController.h"
 
